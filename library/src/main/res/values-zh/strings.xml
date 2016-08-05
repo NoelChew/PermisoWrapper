@@ -1,0 +1,79 @@
+<resources>
+    <!-- common -->
+    <string name="ncutils_yes">是</string>
+    <string name="ncutils_no">否</string>
+    <string name="ncutils_confirm">确定</string>
+    <string name="ncutils_cancel">取消</string>
+    <string name="ncutils_ok">OK</string>
+    <string name="ncutils_loading">加载中</string>
+    <string name="ncutils_please_wait">请稍等...</string>
+    <string name="ncutils_button_allow">允许</string>
+    <string name="ncutils_button_deny">拒绝</string>
+    <string name="ncutils_done">完成</string>
+    <string name="ncutils_error">发生错误！</string>
+    <string name="ncutils_network_error">网络问题</string>
+    <string name="ncutils_comma">\u3001</string>
+
+    <!-- permission -->
+    <string name="ncutils_permission_settings">设置</string>
+    <string name="ncutils_permission_main_activity_storage_explanation">为了提高应用程序的性能，被朋友送往重要的媒体将被保存到手机上。</string>
+    <string name="ncutils_permission_main_activity_storage_explanation_never_show_again">为了提高应用程序的性能，被朋友送往重要的媒体将被保存到手机上。\n\n请允许应用程序设置访问存储。</string>
+    <string name="ncutils_permission_four_spaces">\u0020\u0020\u0020\u0020</string>
+    <string name="ncutils_permission_group_calendar">日历</string>
+    <string name="ncutils_permission_group_camera">相机</string>
+    <string name="ncutils_permission_group_contacts">通讯录</string>
+    <string name="ncutils_permission_group_location">位置</string>
+    <string name="ncutils_permission_group_microphone">麦克风</string>
+    <string name="ncutils_permission_group_phone">电话</string>
+    <string name="ncutils_permission_group_sensors">传感器</string>
+    <string name="ncutils_permission_group_sms">短信</string>
+    <string name="ncutils_permission_group_storage">存储</string>
+    <string name="ncutils_permission_rationale_general">以下电话功能要求允许：\n</string>
+    <string name="ncutils_permission_rationale_general_part2">以便可以享用以下功能:\n</string>
+    <string name="ncutils_permission_denied_general">程序无权使用以下电话功能:\n</string>
+    <string name="ncutils_permission_denied_general_part2">\n受影响的功能:\n</string>
+    <string name="ncutils_permission_denied_general_instructions">\n程序的权限可在手机设置中进行配置。</string>
+
+    <!-- Calendar -->
+    <string name="ncutils_permission_rationale_feature_access_calendar">访问日历</string>
+
+    <!-- Camera -->
+    <string name="ncutils_permission_rationale_feature_take_picture">拍照</string>
+    <string name="ncutils_permission_rationale_feature_voice_call">语音通话</string>
+
+    <!-- Microphone -->
+    <string name="ncutils_permission_rationale_feature_voice_messaging">发送语音邮件</string>
+
+    <!-- Camera and Microphone -->
+    <string name="ncutils_permission_rationale_feature_take_video">录制视频</string>
+    <string name="ncutils_permission_rationale_feature_video_call">视频通话</string>
+
+    <!-- Contacts -->
+    <string name="ncutils_permission_rationale_feature_access_contacts">访问通讯录</string>
+    <string name="ncutils_permission_rationale_feature_recommend_new_friends">从通讯录推荐好友</string>
+
+    <!-- Location -->
+    <string name="ncutils_permission_rationale_feature_auto_fill_area_code">自动填充区号</string>
+    <string name="ncutils_permission_rationale_feature_share_location">分享位置</string>
+    <string name="ncutils_permission_rationale_feature_locate_user">定位</string>
+
+    <!-- Storage -->
+    <string name="ncutils_permission_rationale_feature_pick_picture">从存储设备选择图片</string>
+    <string name="ncutils_permission_rationale_feature_pick_video">从存储设备中选择视频</string>
+    <string name="ncutils_permission_rationale_feature_save_media_to_storage">用电话存储保存媒体</string>
+    <string name="ncutils_permission_rationale_feature_save_content_to_storage">用电话存储保存内容</string>
+
+    <!-- Telephone -->
+    <string name="ncutils_permission_rationale_feature_access_phone_features">访问电话功能</string>
+    <string name="ncutils_permission_rationale_feature_get_phone_number">获取电话号码</string>
+    <string name="ncutils_permission_rationale_feature_make_phone_call">手机通话</string>
+
+    <!-- SMS -->
+    <string name="ncutils_permission_rationale_feature_access_sms">访问短信和彩信功能</string>
+    <string name="ncutils_permission_rationale_send_sms">发送短信</string>
+    <string name="ncutils_permission_rationale_read_sms">读短信</string>
+
+    <!-- Sensors -->
+    <string name="ncutils_permission_rationale_feature_access_sensors">访问手机传感器</string>
+
+</resources>
