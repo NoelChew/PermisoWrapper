@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.greysonparrelli.permiso.Permiso;
-import com.noelchew.permisowrapper.PermissionUtil;
+import com.noelchew.permisowrapper.PermisoWrapper;
 import com.noelchew.permisowrapper.demo.adapter.DangerousActionAdapter;
 import com.noelchew.permisowrapper.demo.listener.OnClickListener;
 
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener btnCheckPermissionsOnClickListener  = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            PermissionUtil.startInstalledAppDetailsActivity(context);
+            PermisoWrapper.startInstalledAppDetailsActivity(context);
         }
     };
 

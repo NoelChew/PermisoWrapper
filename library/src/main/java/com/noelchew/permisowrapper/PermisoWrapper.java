@@ -20,7 +20,7 @@ import java.util.HashSet;
 /**
  * Created by noelchew on 3/31/16.
  */
-public class PermissionUtil {
+public class PermisoWrapper {
     /***
      *
      * @param context
@@ -210,7 +210,7 @@ public class PermissionUtil {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         listener.onPermissionDenied();
-                                        PermissionUtil.startInstalledAppDetailsActivity(context);
+                                        PermisoWrapper.startInstalledAppDetailsActivity(context);
                                     }
                                 });
 
