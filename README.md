@@ -50,7 +50,7 @@ Call any predefined methods in PermisoWrapper. For instance, the getPermissionTa
 PermisoWrapper.getPermissionTakeVideo(context, new PermisoWrapper.PermissionListener() {
                             @Override
                             public void onPermissionGranted() {
-                                // TODO: do something
+                                // TODO: create intent to record video
                             }
 
                             @Override
@@ -59,6 +59,30 @@ PermisoWrapper.getPermissionTakeVideo(context, new PermisoWrapper.PermissionList
                             }
                         });
 ```
+
+## List of Predefined Methods
+- getPermissionPickPictureVideo()
+- getPermissionTakePicture()
+- getPermissionTakeVideo()
+- getPermissionVoiceMessage()
+- getPermissionVoiceCall()
+- getPermissionVideoCall()
+- getPermissionShareLocation()
+- getPermissionLocateUser()
+- getPermissionAutoFillAreaCode()
+- getPermissionAccessContacts()
+- getPermissionRecommendNewFriends()
+- getPermissionSaveMediaToStorage()
+- getPermissionSaveContentToStorage()
+- getPermissionAccessCalendar()
+- getPermissionAccessPhoneFeatures()
+- getPermissionGetPhoneNumber()
+- getPermissionMakePhoneCall()
+- getPermissionAccessSMS()
+- getPermissionSendSMS()
+- getPermissionReadSMS()
+- getPermissionAccessPhoneSensors()
+
 
 ## Integration
 This library is hosted by jitpack.io.
