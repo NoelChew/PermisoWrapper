@@ -1,4 +1,4 @@
-package com.noelchew.permisowrapper.demo;
+package com.noelchew.permisowrapper.demo.permissions;
 
 import android.content.Context;
 import android.widget.Toast;
@@ -6,10 +6,10 @@ import android.widget.Toast;
 import com.noelchew.permisowrapper.PermisoWrapper;
 
 /**
- * Created by aio-synergy on 05/08/2016.
+ * Created by noelchew on 05/08/2016.
  */
-public class GetPermissionArrayData {
-    public static GetPermission[] getPermissionArrayData(final Context context) {
+public class GetPermissionArrayList {
+    public static GetPermission[] getPermissionArrayList(final Context context) {
         GetPermission[] getPermissions = new GetPermission[]{
                 new GetPermission() {
                     @Override

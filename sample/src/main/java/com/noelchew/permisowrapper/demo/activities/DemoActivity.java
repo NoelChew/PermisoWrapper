@@ -1,4 +1,4 @@
-package com.noelchew.permisowrapper.demo;
+package com.noelchew.permisowrapper.demo.activities;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -6,17 +6,20 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 import com.greysonparrelli.permiso.Permiso;
 import com.noelchew.permisowrapper.PermisoWrapper;
+import com.noelchew.permisowrapper.demo.actions.GetDangerousActionArrayList;
+import com.noelchew.permisowrapper.demo.permissions.GetPermission;
+import com.noelchew.permisowrapper.demo.permissions.GetPermissionArrayList;
+import com.noelchew.permisowrapper.demo.R;
 import com.noelchew.permisowrapper.demo.adapter.DangerousActionAdapter;
 import com.noelchew.permisowrapper.demo.listener.OnClickListener;
 
-import java.util.ArrayList;
-
-public class MainActivity extends AppCompatActivity {
+public class DemoActivity extends AppCompatActivity {
 
     private Context context;
     private Button btnCheckPermissions;
@@ -32,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Permiso.getInstance().setActivity(this);
         context = this;
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_demo);
 
         btnCheckPermissions = (Button) findViewById(R.id.button_check_permissions);
         btnCheckPermissions.setOnClickListener(btnCheckPermissionsOnClickListener);
@@ -42,10 +45,22 @@ public class MainActivity extends AppCompatActivity {
         linearLayoutManager = new LinearLayoutManager(context);
         recyclerView.setLayoutManager(linearLayoutManager);
 
-        adapter = new DangerousActionAdapter(context, getDangerousActions(), listener);
+        adapter = new DangerousActionAdapter(context, GetDangerousActionArrayList.getDangerousActions(), listener);
         recyclerView.setAdapter(adapter);
 
-        getPermissionArray = GetPermissionArrayData.getPermissionArrayData(context);
+        getPermissionArray = GetPermissionArrayList.getPermissionArrayList(context);
+
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -58,33 +73,6 @@ public class MainActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         Permiso.getInstance().onRequestPermissionResult(requestCode, permissions, grantResults);
-    }
-
-    private ArrayList<DangerousAction> getDangerousActions() {
-        ArrayList<DangerousAction> dangerousActionArrayList = new ArrayList<>();
-        dangerousActionArrayList.add(new DangerousAction("Pick Picture/Video"));
-        dangerousActionArrayList.add(new DangerousAction("Take Picture"));
-        dangerousActionArrayList.add(new DangerousAction("Take Video"));
-        dangerousActionArrayList.add(new DangerousAction("Send Voice Message"));
-        dangerousActionArrayList.add(new DangerousAction("Make Voice Call"));
-        dangerousActionArrayList.add(new DangerousAction("Make Video Call"));
-        dangerousActionArrayList.add(new DangerousAction("Share Location"));
-        dangerousActionArrayList.add(new DangerousAction("Locate User"));
-        dangerousActionArrayList.add(new DangerousAction("Autofill Area Code"));
-        dangerousActionArrayList.add(new DangerousAction("Access Contacts"));
-        dangerousActionArrayList.add(new DangerousAction("Recommend New Friends"));
-        dangerousActionArrayList.add(new DangerousAction("Save Media to Storage"));
-        dangerousActionArrayList.add(new DangerousAction("Save Content to Storage"));
-        dangerousActionArrayList.add(new DangerousAction("Access Calendar"));
-        dangerousActionArrayList.add(new DangerousAction("Access Phone Features"));
-        dangerousActionArrayList.add(new DangerousAction("Get Phone Number"));
-        dangerousActionArrayList.add(new DangerousAction("Make Phone Call"));
-        dangerousActionArrayList.add(new DangerousAction("Access SMS"));
-        dangerousActionArrayList.add(new DangerousAction("Send SMS"));
-        dangerousActionArrayList.add(new DangerousAction("Read SMS"));
-        dangerousActionArrayList.add(new DangerousAction("Access Phone Sensors"));
-
-        return dangerousActionArrayList;
     }
 
     private OnClickListener listener = new OnClickListener() {
