@@ -1,41 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:gravity="center"
+    android:orientation="vertical">
 
     <Button
-        android:backgroundTint="@color/colorPrimary"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/button_check_permissions"
+        android:id="@+id/button_activity_demo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="4dp"
-        android:padding="20dp"
-        android:textColor="@android:color/white"
-        android:text="Check Permissions"
-        android:textSize="20sp" />
+        android:layout_margin="8dp"
+        android:text="Activity" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_view"
-        android:layout_above="@+id/button_check_permissions"
+    <Button
+        android:id="@+id/button_fragment_demo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Fragment" />
 
-    <!--<ScrollView-->
-        <!--android:layout_above="@+id/button_check_permissions"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent">-->
-        <!---->
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content">-->
-            <!---->
-        <!--</LinearLayout>-->
-        <!---->
-    <!--</ScrollView>-->
+    <Button
+        android:id="@+id/button_support_fragment_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Support Fragment" />
 
-</RelativeLayout>
+
+</LinearLayout>

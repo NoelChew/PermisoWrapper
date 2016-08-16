@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.noelchew.permisowrapper.demo.DangerousAction;
+import com.noelchew.permisowrapper.demo.actions.DangerousAction;
 import com.noelchew.permisowrapper.demo.R;
 import com.noelchew.permisowrapper.demo.listener.OnClickListener;
 

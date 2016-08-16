@@ -1,4 +1,4 @@
-package com.noelchew.permisowrapper.demo;
+package com.noelchew.permisowrapper.demo.actions;
 
 /**
  * Created by noelchew on 05/08/2016.
