@@ -1,4 +1,8 @@
 # PermisoWrapper
+
+[![Release](https://jitpack.io/v/noelchew/PermisoWrapper.svg)](https://jitpack.io/#noelchew/PermisoWrapper)
+
+
 - Android Runtime Permission Library
 - This is actually a wrapper around a very useful Android Runtime Permission library [Permiso](https://github.com/greysonp/permiso) written by [greysonp](https://github.com/greysonp)
 - This wrapper library allows user to request permission easily by calling predefined methods
