@@ -38,3 +38,15 @@ captures/
 
 # Keystore files
 *.jks
+
+.idea/gradle.xml
+
+.idea/gradle.xml
+
+.idea/libraries/animated_vector_drawable_23_4_0.xml
+
+.idea/libraries/appcompat_v7_23_4_0.xml
+
+.idea/libraries/hamcrest_core_1_3.xml
+
+.idea/gradle.xml

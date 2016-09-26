@@ -38,10 +38,11 @@
     <string name="ncutils_permission_rationale_feature_access_calendar">Access Calendar</string>
 
     <!-- Camera -->
+    <string name="ncutils_permission_rationale_feature_scan_qr_code">Scan QR Code</string>
     <string name="ncutils_permission_rationale_feature_take_picture">Take Picture with Camera</string>
-    <string name="ncutils_permission_rationale_feature_voice_call">Voice Call</string>
 
     <!-- Microphone -->
+    <string name="ncutils_permission_rationale_feature_voice_call">Voice Call</string>
     <string name="ncutils_permission_rationale_feature_voice_messaging">Send Voice Messages</string>
 
     <!-- Camera and Microphone -->
