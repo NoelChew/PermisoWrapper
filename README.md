@@ -104,7 +104,7 @@ allprojects {
 Application level gradle:
 ```
 dependencies {
-    compile 'com.github.noelchew:PermisoWrapper:0.1.1'
+    compile 'com.github.noelchew:PermisoWrapper:x.y.z'
 }
 ```
 Note: do not add the jitpack.io repository under buildscript
