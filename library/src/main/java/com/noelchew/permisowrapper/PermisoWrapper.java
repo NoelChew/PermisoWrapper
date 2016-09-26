@@ -32,6 +32,12 @@ public class PermisoWrapper {
         _getPermission(context, listener, rationaleStringResourceArrayList, permissions);
     }
 
+    public static void getPermissionScanQRCode(final Context context, final PermissionListener listener) {
+        ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
+        rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_scan_qr_code);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.CAMERA);
+    }
+
     public static void getPermissionPickPictureVideo(final Context context, final PermissionListener listener) {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_pick_picture);

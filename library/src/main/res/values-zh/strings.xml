@@ -38,10 +38,11 @@
     <string name="ncutils_permission_rationale_feature_access_calendar">访问日历</string>
 
     <!-- Camera -->
+    <string name="ncutils_permission_rationale_feature_scan_qr_code">扫描二维码</string>
     <string name="ncutils_permission_rationale_feature_take_picture">拍照</string>
-    <string name="ncutils_permission_rationale_feature_voice_call">语音通话</string>
 
     <!-- Microphone -->
+    <string name="ncutils_permission_rationale_feature_voice_call">语音通话</string>
     <string name="ncutils_permission_rationale_feature_voice_messaging">发送语音邮件</string>
 
     <!-- Camera and Microphone -->
