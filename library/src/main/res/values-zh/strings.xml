@@ -77,4 +77,7 @@
     <!-- Sensors -->
     <string name="ncutils_permission_rationale_feature_access_sensors">访问手机传感器</string>
 
+    <!-- BLE -->
+    <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">扫描周边蓝牙设备</string>
+
 </resources>

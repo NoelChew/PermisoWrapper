@@ -76,4 +76,7 @@
 
     <!-- Sensors -->
     <string name="ncutils_permission_rationale_feature_access_sensors">Access Phone Sensors</string>
+
+    <!-- BLE -->
+    <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">Scan Surrounding Bluetooth Devices</string>
 </resources>

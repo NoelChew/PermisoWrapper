@@ -183,6 +183,13 @@ public class PermisoWrapper {
         _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.BODY_SENSORS);
     }
 
+    // Bluetooth Low Energy
+    public static void getPermissionScanSurroundingBLE(final Context context, final PermissionListener listener) {
+        ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
+        rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_scan_surrounding_ble);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_COARSE_LOCATION);
+    }
+
     private static void _getPermission(final Context context, final PermissionListener listener, final ArrayList<Integer> rationaleStringResourceArrayList, final String... permissions) {
         Permiso.getInstance().requestPermissions(new Permiso.IOnPermissionResult() {
             @Override
