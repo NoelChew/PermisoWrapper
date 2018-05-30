@@ -8,8 +8,8 @@ android {
         applicationId "com.noelchew.permisowrapper.demo"
         minSdkVersion 15
         targetSdkVersion 27
-        versionCode 6
-        versionName "0.2.0"
+        versionCode 7
+        versionName "0.2.1"
     }
     buildTypes {
         release {
@@ -22,7 +22,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
-    implementation project(':library')
+    api project(':library')
     implementation 'com.android.support:appcompat-v7:27.0.2'
     implementation 'com.android.support:recyclerview-v7:27.0.2'
 }
