@@ -7,23 +7,23 @@
 - This is actually a wrapper around a very useful Android Runtime Permission library [Permiso](https://github.com/greysonp/permiso) written by [greysonp](https://github.com/greysonp)
 - This wrapper library allows user to request permission easily by calling predefined methods
 
-####Creates an AlertDialog containing the feature and required permissions
+#### Creates an AlertDialog containing the feature and required permissions
 
 ![screenshot1](https://github.com/NoelChew/PermisoWrapper/blob/master/screenshots/screenshot_1.png)
 ![screenshot2](https://github.com/NoelChew/PermisoWrapper/blob/master/screenshots/screenshot_2.png)
 
 
-####Displays permission request automatically
+#### Displays permission request automatically
 
 ![screenshot3](https://github.com/NoelChew/PermisoWrapper/blob/master/screenshots/screenshot_3.png)
 
 
-####Handles "Never ask again" permission denied scenario
+#### Handles "Never ask again" permission denied scenario
 
 ![screenshot4](https://github.com/NoelChew/PermisoWrapper/blob/master/screenshots/screenshot_4.png)
 ![screenshot5](https://github.com/NoelChew/PermisoWrapper/blob/master/screenshots/screenshot_5.png)
 
-####Opens App Settings if user clicks on "Settings" button in AlertDialog
+#### Opens App Settings if user clicks on "Settings" button in AlertDialog
 ![screenshot6](https://github.com/NoelChew/PermisoWrapper/blob/master/screenshots/screenshot_6.png)
 
 ## How to Use
@@ -65,8 +65,10 @@ PermisoWrapper.getPermissionTakeVideo(context, new PermisoWrapper.PermissionList
 ```
 
 ## List of Predefined Methods
+- getPermissionScanQRCode()
 - getPermissionPickPictureVideo()
 - getPermissionTakePicture()
+- getPermissionTakePictureWithoutSave()
 - getPermissionTakeVideo()
 - getPermissionVoiceMessage()
 - getPermissionVoiceCall()
@@ -96,15 +98,18 @@ Root level gradle:
 allprojects {
  repositories {
     jcenter()
+    google()
     maven { url "https://jitpack.io" }
  }
 }
 ```
 
 Application level gradle:
+
+[![Release](https://jitpack.io/v/noelchew/PermisoWrapper.svg)](https://jitpack.io/#noelchew/PermisoWrapper)
 ```
 dependencies {
-    compile 'com.github.noelchew:PermisoWrapper:x.y.z'
+    implementation 'com.github.noelchew:PermisoWrapper:x.y.z'
 }
 ```
 Note: do not add the jitpack.io repository under buildscript
