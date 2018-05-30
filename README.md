@@ -98,6 +98,7 @@ Root level gradle:
 allprojects {
  repositories {
     jcenter()
+    google()
     maven { url "https://jitpack.io" }
  }
 }
@@ -108,7 +109,7 @@ Application level gradle:
 [![Release](https://jitpack.io/v/noelchew/PermisoWrapper.svg)](https://jitpack.io/#noelchew/PermisoWrapper)
 ```
 dependencies {
-    compile 'com.github.noelchew:PermisoWrapper:x.y.z'
+    implementation 'com.github.noelchew:PermisoWrapper:x.y.z'
 }
 ```
 Note: do not add the jitpack.io repository under buildscript
