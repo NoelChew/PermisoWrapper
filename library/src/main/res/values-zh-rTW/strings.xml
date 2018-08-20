@@ -1,0 +1,80 @@
+<resources>
+    <!-- common -->
+    <string name="ncutils_yes">是</string>
+    <string name="ncutils_no">否</string>
+    <string name="ncutils_confirm">確定</string>
+    <string name="ncutils_cancel">取消</string>
+    <string name="ncutils_ok">OK</string>
+    <string name="ncutils_loading">加載中</string>
+    <string name="ncutils_please_wait">請稍等...</string>
+    <string name="ncutils_button_allow">允許</string>
+    <string name="ncutils_button_deny">拒絕</string>
+    <string name="ncutils_done">完成</string>
+    <string name="ncutils_error">發生錯誤！ </string>
+    <string name="ncutils_network_error">網絡問題</string>
+
+    <!-- permission -->
+    <string name="ncutils_permission_settings">設置</string>
+    <string name="ncutils_permission_main_activity_storage_explanation">為了提高應用程序的性能，被朋友送往重要的媒體將被保存到手機上。 </string>
+    <string name="ncutils_permission_main_activity_storage_explanation_never_show_again">為了提高應用程序的性能，被朋友送往重要的媒體將被保存到手機上。 \n\n請允許應用程序設置訪問存儲。 </string>
+    <string name="ncutils_permission_group_calendar">日曆</string>
+    <string name="ncutils_permission_group_camera">相機</string>
+    <string name="ncutils_permission_group_contacts">通訊錄</string>
+    <string name="ncutils_permission_group_location">位置</string>
+    <string name="ncutils_permission_group_microphone">麥克風</string>
+    <string name="ncutils_permission_group_phone">電話</string>
+    <string name="ncutils_permission_group_sensors">傳感器</string>
+    <string name="ncutils_permission_group_sms">短信</string>
+    <string name="ncutils_permission_group_storage">存儲</string>
+    <string name="ncutils_permission_rationale_general">以下電話功能要求允許：\n</string>
+    <string name="ncutils_permission_rationale_general_part2">以便可以享用以下功能:\n</string>
+    <string name="ncutils_permission_denied_general">程序無權使用以下電話功能:\n</string>
+    <string name="ncutils_permission_denied_general_part2">\n受影響的功能:\n</string>
+    <string name="ncutils_permission_denied_general_instructions">\n程序的權限可在手機設置中進行配置。 </string>
+
+    <!-- Calendar -->
+    <string name="ncutils_permission_rationale_feature_access_calendar">訪問日曆</string>
+
+    <!-- Camera -->
+    <string name="ncutils_permission_rationale_feature_scan_qr_code">掃描二維碼</string>
+    <string name="ncutils_permission_rationale_feature_take_picture">拍照</string>
+
+    <!-- Microphone -->
+    <string name="ncutils_permission_rationale_feature_voice_call">語音通話</string>
+    <string name="ncutils_permission_rationale_feature_voice_messaging">發送語音郵件</string>
+
+    <!-- Camera and Microphone -->
+    <string name="ncutils_permission_rationale_feature_take_video">錄製視頻</string>
+    <string name="ncutils_permission_rationale_feature_video_call">視頻通話</string>
+
+    <!-- Contacts -->
+    <string name="ncutils_permission_rationale_feature_access_contacts">訪問通訊錄</string>
+    <string name="ncutils_permission_rationale_feature_recommend_new_friends">從通訊錄推薦好友</string>
+
+    <!-- Location -->
+    <string name="ncutils_permission_rationale_feature_auto_fill_area_code">自動填充區號</string>
+    <string name="ncutils_permission_rationale_feature_share_location">分享位置</string>
+    <string name="ncutils_permission_rationale_feature_locate_user">定位</string>
+
+    <!-- Storage -->
+    <string name="ncutils_permission_rationale_feature_pick_picture">從存儲設備選擇圖片</string>
+    <string name="ncutils_permission_rationale_feature_pick_video">從存儲設備中選擇視頻</string>
+    <string name="ncutils_permission_rationale_feature_save_media_to_storage">用電話存儲保存媒體</string>
+    <string name="ncutils_permission_rationale_feature_save_content_to_storage">用電話存儲保存內容</string>
+
+    <!-- Telephone -->
+    <string name="ncutils_permission_rationale_feature_access_phone_features">訪問電話功能</string>
+    <string name="ncutils_permission_rationale_feature_get_phone_number">獲取電話號碼</string>
+    <string name="ncutils_permission_rationale_feature_make_phone_call">手機通話</string>
+
+    <!-- SMS -->
+    <string name="ncutils_permission_rationale_feature_access_sms">訪問短信和彩信功能</string>
+    <string name="ncutils_permission_rationale_send_sms">發送短信</string>
+    <string name="ncutils_permission_rationale_read_sms">讀短信</string>
+
+    <!-- Sensors -->
+    <string name="ncutils_permission_rationale_feature_access_sensors">訪問手機傳感器</string>
+
+    <!-- BLE -->
+    <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">掃描周邊藍牙設備</string>
+</resources>

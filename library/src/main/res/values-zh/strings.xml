@@ -12,13 +12,11 @@
     <string name="ncutils_done">完成</string>
     <string name="ncutils_error">发生错误！</string>
     <string name="ncutils_network_error">网络问题</string>
-    <string name="ncutils_comma">\u3001</string>
 
     <!-- permission -->
     <string name="ncutils_permission_settings">设置</string>
     <string name="ncutils_permission_main_activity_storage_explanation">为了提高应用程序的性能，被朋友送往重要的媒体将被保存到手机上。</string>
     <string name="ncutils_permission_main_activity_storage_explanation_never_show_again">为了提高应用程序的性能，被朋友送往重要的媒体将被保存到手机上。\n\n请允许应用程序设置访问存储。</string>
-    <string name="ncutils_permission_four_spaces">\u0020\u0020\u0020\u0020</string>
     <string name="ncutils_permission_group_calendar">日历</string>
     <string name="ncutils_permission_group_camera">相机</string>
     <string name="ncutils_permission_group_contacts">通讯录</string>
