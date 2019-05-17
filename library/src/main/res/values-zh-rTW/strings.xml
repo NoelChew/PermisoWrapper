@@ -15,8 +15,6 @@
 
     <!-- permission -->
     <string name="ncutils_permission_settings">設置</string>
-    <string name="ncutils_permission_main_activity_storage_explanation">為了提高應用程序的性能，被朋友送往重要的媒體將被保存到手機上。 </string>
-    <string name="ncutils_permission_main_activity_storage_explanation_never_show_again">為了提高應用程序的性能，被朋友送往重要的媒體將被保存到手機上。 \n\n請允許應用程序設置訪問存儲。 </string>
     <string name="ncutils_permission_group_calendar">日曆</string>
     <string name="ncutils_permission_group_camera">相機</string>
     <string name="ncutils_permission_group_contacts">通訊錄</string>
@@ -42,6 +40,7 @@
     <!-- Microphone -->
     <string name="ncutils_permission_rationale_feature_voice_call">語音通話</string>
     <string name="ncutils_permission_rationale_feature_voice_messaging">發送語音郵件</string>
+    <string name="ncutils_permission_rationale_feature_record_voice">錄製語音</string>
 
     <!-- Camera and Microphone -->
     <string name="ncutils_permission_rationale_feature_take_video">錄製視頻</string>
@@ -58,7 +57,10 @@
 
     <!-- Storage -->
     <string name="ncutils_permission_rationale_feature_pick_picture">從存儲設備選擇圖片</string>
-    <string name="ncutils_permission_rationale_feature_pick_video">從存儲設備中選擇視頻</string>
+    <string name="ncutils_permission_rationale_feature_pick_video">從存儲設備選擇視頻</string>
+    <string name="ncutils_permission_rationale_feature_pick_audio">從存儲中選擇音頻</string>
+    <string name="ncutils_permission_rationale_feature_pick_folder">從存儲設備選擇文件夹</string>
+    <string name="ncutils_permission_rationale_feature_pick_file">從存儲設備選擇文件</string>
     <string name="ncutils_permission_rationale_feature_save_media_to_storage">用電話存儲保存媒體</string>
     <string name="ncutils_permission_rationale_feature_save_content_to_storage">用電話存儲保存內容</string>
 

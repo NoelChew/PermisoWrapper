@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- common -->
+    <string name="ncutils_yes">Oui</string>
+    <string name="ncutils_no">Non</string>
+    <string name="ncutils_confirm">Confirmez</string>
+    <string name="ncutils_cancel">Annuler</string>
+    <string name="ncutils_ok">OK</string>
+    <string name="ncutils_loading">Chargement</string>
+    <string name="ncutils_please_wait">Veuillez patienter...</string>
+    <string name="ncutils_button_allow">Autoriser</string>
+    <string name="ncutils_button_deny">Refuser</string>
+    <string name="ncutils_done">Terminé</string>
+    <string name="ncutils_error">Une erreur s\'est produite!</string>
+    <string name="ncutils_network_error">Erreur Réseau</string>
+
+    <!-- permission -->
+    <string name="ncutils_permission_settings">Paramètres</string>
+    <string name="ncutils_permission_group_calendar">Calendrier</string>
+    <string name="ncutils_permission_group_camera">Caméra</string>
+    <string name="ncutils_permission_group_contacts">Contacts</string>
+    <string name="ncutils_permission_group_location">Emplacement</string>
+    <string name="ncutils_permission_group_microphone">Microphone</string>
+    <string name="ncutils_permission_group_phone">Téléphone</string>
+    <string name="ncutils_permission_group_sensors">Capteurs</string>
+    <string name="ncutils_permission_group_sms">SMS</string>
+    <string name="ncutils_permission_group_storage">Stockage</string>
+    <string name="ncutils_permission_rationale_general">Une autorisation est requise pour accéder aux fonctionnalités téléphoniques suivantes:\n</string>
+    <string name="ncutils_permission_rationale_general_part2">pour utiliser les fonctionnalités suivantes:\n</string>
+    <string name="ncutils_permission_denied_general">L\'application n\'a pas accès à une ou plusieurs des fonctions téléphoniques suivantes:\n</string>
+    <string name="ncutils_permission_denied_general_part2">\nFonctionnalités affectées:\n</string>
+    <string name="ncutils_permission_denied_general_instructions">\nLes autorisations de l\'application peuvent être configurées dans les paramètres du téléphone.</string>
+
+
+    <!-- Calendar -->
+    <string name="ncutils_permission_rationale_feature_access_calendar">Calendrier d\'accès</string>
+
+    <!-- Camera -->
+    <string name="ncutils_permission_rationale_feature_scan_qr_code">Scannez le code QR</string>
+    <string name="ncutils_permission_rationale_feature_take_picture">Prendre une photo avec l\'appareil photo</string>
+
+    <!-- Microphone -->
+    <string name="ncutils_permission_rationale_feature_voice_call">Appel vocal</string>
+    <string name="ncutils_permission_rationale_feature_voice_messaging">Envoyer des messages vocaux</string>
+    <string name="ncutils_permission_rationale_feature_record_voice">Enregistrer la voix</string>
+
+    <!-- Camera and Microphone -->
+    <string name="ncutils_permission_rationale_feature_take_video">Enregistrer une vidéo avec une caméra</string>
+    <string name="ncutils_permission_rationale_feature_video_call">Appel vidéo</string>
+
+    <!-- Contacts -->
+    <string name="ncutils_permission_rationale_feature_access_contacts">Contacts d\'accès</string>
+    <string name="ncutils_permission_rationale_feature_recommend_new_friends">Recommander de nouveaux amis à partir de contacts</string>
+
+    <!-- Location -->
+    <string name="ncutils_permission_rationale_feature_auto_fill_area_code">Code de zone de remplissage automatique</string>
+    <string name="ncutils_permission_rationale_feature_share_location">Emplacement de partage</string>
+    <string name="ncutils_permission_rationale_feature_locate_user">Localiser l\'utilisateur </string>
+
+    <!-- Storage -->
+    <string name="ncutils_permission_rationale_feature_pick_picture">Sélectionner une image dans le stockage</string>
+    <string name="ncutils_permission_rationale_feature_pick_video">Sélectionner une vidéo dans le stockage</string>
+    <string name="ncutils_permission_rationale_feature_pick_audio">Sélectionner le son dans le stockage</string>
+    <string name="ncutils_permission_rationale_feature_pick_folder">Sélectionner un dossier dans le stockage</string>
+    <string name="ncutils_permission_rationale_feature_pick_file">Sélectionner un fichier dans le stockage</string>
+    <string name="ncutils_permission_rationale_feature_save_media_to_storage">Enregistrer le média dans le stockage</string>
+    <string name="ncutils_permission_rationale_feature_save_content_to_storage">Enregistrer le contenu dans le stockage</string>
+
+    <!-- Telephone -->
+    <string name="ncutils_permission_rationale_feature_access_phone_features">Fonctionnalités d\'accès au téléphone</string>
+    <string name="ncutils_permission_rationale_feature_get_phone_number">Obtenir le numéro de téléphone</string>
+    <string name="ncutils_permission_rationale_feature_make_phone_call">Faire un appel téléphonique</string>
+
+    <!-- SMS -->
+    <string name="ncutils_permission_rationale_feature_access_sms">Accéder aux fonctions SMS et MMS</string>
+    <string name="ncutils_permission_rationale_send_sms">Envoyer un SMS</string>
+    <string name="ncutils_permission_rationale_read_sms">Lire le SMS</string>
+
+    <!-- Sensors -->
+    <string name="ncutils_permission_rationale_feature_access_sensors">Capteurs d\'accès téléphonique</string>
+
+    <!-- BLE -->
+    <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">Analyser les périphériques Bluetooth environnants</string>
+
+</resources>

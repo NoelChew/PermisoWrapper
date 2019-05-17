@@ -1,8 +1,5 @@
 <resources>
 
-    <string name="ncutils_comma" translatable="false">\u002c\u0020</string>
-    <string name="ncutils_permission_four_spaces" translatable="false">\u0020\u0020\u0020\u0020</string>
-
     <!-- common -->
     <string name="ncutils_yes">Yes</string>
     <string name="ncutils_no">No</string>
@@ -19,8 +16,6 @@
 
     <!-- permission -->
     <string name="ncutils_permission_settings">Settings</string>
-    <string name="ncutils_permission_main_activity_storage_explanation">To improve app performance, important media sent by friends will be saved into phone.</string>
-    <string name="ncutils_permission_main_activity_storage_explanation_never_show_again">To improve app performance, important media sent by friends will be saved into phone.\n\nPlease allow access to Storage in app Settings.</string>
     <string name="ncutils_permission_group_calendar">Calendar</string>
     <string name="ncutils_permission_group_camera">Camera</string>
     <string name="ncutils_permission_group_contacts">Contacts</string>
@@ -46,6 +41,7 @@
     <!-- Microphone -->
     <string name="ncutils_permission_rationale_feature_voice_call">Voice Call</string>
     <string name="ncutils_permission_rationale_feature_voice_messaging">Send Voice Messages</string>
+    <string name="ncutils_permission_rationale_feature_record_voice">Record Voice</string>
 
     <!-- Camera and Microphone -->
     <string name="ncutils_permission_rationale_feature_take_video">Record Video with Camera</string>
@@ -63,6 +59,9 @@
     <!-- Storage -->
     <string name="ncutils_permission_rationale_feature_pick_picture">Select Picture from Storage</string>
     <string name="ncutils_permission_rationale_feature_pick_video">Select Video from Storage</string>
+    <string name="ncutils_permission_rationale_feature_pick_audio">Select Audio from Storage</string>
+    <string name="ncutils_permission_rationale_feature_pick_folder">Select Folder from Storage</string>
+    <string name="ncutils_permission_rationale_feature_pick_file">Select File from Storage</string>
     <string name="ncutils_permission_rationale_feature_save_media_to_storage">Save Media to Storage</string>
     <string name="ncutils_permission_rationale_feature_save_content_to_storage">Save Content to Storage</string>
 
