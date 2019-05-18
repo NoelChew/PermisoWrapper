@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- common -->
+    <string name="ncutils_yes">Ya</string>
+    <string name="ncutils_no">Tidak</string>
+    <string name="ncutils_confirm">Pasti</string>
+    <string name="ncutils_cancel">Batal</string>
+    <string name="ncutils_ok">OK</string>
+    <string name="ncutils_loading">Loading</string>
+    <string name="ncutils_please_wait">Sila tunggu...</string>
+    <string name="ncutils_button_allow">Benarkan</string>
+    <string name="ncutils_button_deny">Menafikan</string>
+    <string name="ncutils_done">Selesai</string>
+    <string name="ncutils_error">Kesilapan berlaku!</string>
+    <string name="ncutils_network_error">Kesilapan Rangkaian</string>
+
+    <!-- permission -->
+    <string name="ncutils_permission_settings">Tetapan</string>
+    <string name="ncutils_permission_group_calendar">Kalendar</string>
+    <string name="ncutils_permission_group_camera">Kamera</string>
+    <string name="ncutils_permission_group_contacts">Kenalan</string>
+    <string name="ncutils_permission_group_location">Lokasi</string>
+    <string name="ncutils_permission_group_microphone">Mikrofon</string>
+    <string name="ncutils_permission_group_phone">PhonTelefone</string>
+    <string name="ncutils_permission_group_sensors">Sensors</string>
+    <string name="ncutils_permission_group_sms">SMS</string>
+    <string name="ncutils_permission_group_storage">Penyimpanan</string>
+    <string name="ncutils_permission_rationale_general">Kebenaran diperlukan untuk mengakses fungsi telefon berikut:\n</string>
+    <string name="ncutils_permission_rationale_general_part2">untuk menggunakan fungsi berikut:\n</string>
+    <string name="ncutils_permission_denied_general">App tidak mempunyai akses kepada satu atau lebih fungsi telefon berikut:\n</string>
+    <string name="ncutils_permission_denied_general_part2">\nFungsi terjejas:\n</string>
+    <string name="ncutils_permission_denied_general_instructions">\nAkses aplikasi boleh dikonfigurasi dalam Tetapan telefon.</string>
+
+    <!-- Calendar -->
+    <string name="ncutils_permission_rationale_feature_access_calendar">Akses Kalendar</string>
+
+    <!-- Camera -->
+    <string name="ncutils_permission_rationale_feature_scan_qr_code">Imbas Kod QR</string>
+    <string name="ncutils_permission_rationale_feature_take_picture">Ambil Gambar dengan Kamera</string>
+
+    <!-- Microphone -->
+    <string name="ncutils_permission_rationale_feature_voice_call">Panggilan Suara</string>
+    <string name="ncutils_permission_rationale_feature_voice_messaging">Hantar Mesej Suara</string>
+    <string name="ncutils_permission_rationale_feature_record_voice">Rekod Suara</string>
+
+    <!-- Camera and Microphone -->
+    <string name="ncutils_permission_rationale_feature_take_video">Merakam Video dengan Kamera</string>
+    <string name="ncutils_permission_rationale_feature_video_call">Panggilan Video</string>
+
+    <!-- Contacts -->
+    <string name="ncutils_permission_rationale_feature_access_contacts">Akses Kenalan</string>
+    <string name="ncutils_permission_rationale_feature_recommend_new_friends">Cadangkan Kawan Baru dari Kenalan</string>
+
+    <!-- Location -->
+    <string name="ncutils_permission_rationale_feature_auto_fill_area_code">Pengisian Kod Kawasan Secara Automatik</string>
+    <string name="ncutils_permission_rationale_feature_share_location">Kongsi Lokasi</string>
+    <string name="ncutils_permission_rationale_feature_locate_user">Cari Lokasi Pengguna</string>
+
+    <!-- Storage -->
+    <string name="ncutils_permission_rationale_feature_pick_picture">Pilih Gambar dari Penyimpanan</string>
+    <string name="ncutils_permission_rationale_feature_pick_video">Pilih Video dari Penyimpanan</string>
+    <string name="ncutils_permission_rationale_feature_pick_audio">Pilih Audio dari Penyimpanan</string>
+    <string name="ncutils_permission_rationale_feature_pick_folder">Pilih Folder dari Penyimpanan</string>
+    <string name="ncutils_permission_rationale_feature_pick_file">Pilih Fail daripada Penyimpanan</string>
+    <string name="ncutils_permission_rationale_feature_save_media_to_storage">Simpan Media ke Penyimpanan</string>
+    <string name="ncutils_permission_rationale_feature_save_content_to_storage">Simpan Kandungan ke Penyimpanan</string>
+
+    <!-- Telephone -->
+    <string name="ncutils_permission_rationale_feature_access_phone_features">Akses Fungsi Telefon</string>
+    <string name="ncutils_permission_rationale_feature_get_phone_number">Dapatkan Nombor Telefon</string>
+    <string name="ncutils_permission_rationale_feature_make_phone_call">Buat Panggilan Telefon</string>
+
+    <!-- SMS -->
+    <string name="ncutils_permission_rationale_feature_access_sms">Akses Fungsi SMS dan MMS</string>
+    <string name="ncutils_permission_rationale_send_sms">Hantar SMS</string>
+    <string name="ncutils_permission_rationale_read_sms">Baca SMS</string>
+
+    <!-- Sensors -->
+    <string name="ncutils_permission_rationale_feature_access_sensors">Akses Sensor Telefon</string>
+
+    <!-- BLE -->
+    <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">Imbas Alat Bluetooth Sekeliling</string>
+
+</resources>

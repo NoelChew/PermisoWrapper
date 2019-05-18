@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 /**
- * Created by noelchew on 3/31/16.
+ * Created by noelchew on 31/3/16.
  */
 public class PermisoWrapper {
     /***
@@ -45,6 +45,19 @@ public class PermisoWrapper {
         _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE);
     }
 
+    public static void getPermissionPickAudio(final Context context, final PermissionListener listener) {
+        ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
+        rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_pick_audio);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+    }
+
+    public static void getPermissionPickFolderFile(final Context context, final PermissionListener listener) {
+        ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
+        rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_pick_folder);
+        rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_pick_file);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+    }
+
     public static void getPermissionTakePicture(final Context context, final PermissionListener listener) {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_take_picture);
@@ -61,6 +74,12 @@ public class PermisoWrapper {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_take_video);
         _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+    }
+
+    public static void getPermissionRecordVoice(final Context context, final PermissionListener listener) {
+        ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
+        rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_record_voice);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_EXTERNAL_STORAGE);
     }
 
     public static void getPermissionVoiceMessage(final Context context, final PermissionListener listener) {

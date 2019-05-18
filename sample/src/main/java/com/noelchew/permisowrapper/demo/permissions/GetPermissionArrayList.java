@@ -14,6 +14,22 @@ public class GetPermissionArrayList {
                 new GetPermission() {
                     @Override
                     public void get() {
+                        PermisoWrapper.getPermissionPickFolderFile(context, new PermisoWrapper.PermissionListener() {
+                            @Override
+                            public void onPermissionGranted() {
+                                toast(context, "Permission to pick folder and file GRANTED. Do something here.");
+                            }
+
+                            @Override
+                            public void onPermissionDenied() {
+                                toast(context, "Permission to pick folder and file DENIED.");
+                            }
+                        });
+                    }
+                },
+                new GetPermission() {
+                    @Override
+                    public void get() {
                         PermisoWrapper.getPermissionPickPictureVideo(context, new PermisoWrapper.PermissionListener() {
                             @Override
                             public void onPermissionGranted() {
@@ -55,6 +71,38 @@ public class GetPermissionArrayList {
                             @Override
                             public void onPermissionDenied() {
                                 toast(context, "Permission to take video DENIED.");
+                            }
+                        });
+                    }
+                },
+                new GetPermission() {
+                    @Override
+                    public void get() {
+                        PermisoWrapper.getPermissionPickAudio(context, new PermisoWrapper.PermissionListener() {
+                            @Override
+                            public void onPermissionGranted() {
+                                toast(context, "Permission to pick audio file GRANTED. Do something here.");
+                            }
+
+                            @Override
+                            public void onPermissionDenied() {
+                                toast(context, "Permission to pick audio file DENIED.");
+                            }
+                        });
+                    }
+                },
+                new GetPermission() {
+                    @Override
+                    public void get() {
+                        PermisoWrapper.getPermissionRecordVoice(context, new PermisoWrapper.PermissionListener() {
+                            @Override
+                            public void onPermissionGranted() {
+                                toast(context, "Permission to record voice GRANTED. Do something here.");
+                            }
+
+                            @Override
+                            public void onPermissionDenied() {
+                                toast(context, "Permission to record voice DENIED.");
                             }
                         });
                     }
