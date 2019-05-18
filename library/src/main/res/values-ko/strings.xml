@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- common -->
+    <string name="ncutils_yes">Yes</string>
+    <string name="ncutils_no">No</string>
+    <string name="ncutils_confirm">Confirm</string>
+    <string name="ncutils_cancel">Cancel</string>
+    <string name="ncutils_ok">OK</string>
+    <string name="ncutils_loading">Loading</string>
+    <string name="ncutils_please_wait">Please wait...</string>
+    <string name="ncutils_button_allow">Allow</string>
+    <string name="ncutils_button_deny">Deny</string>
+    <string name="ncutils_done">Done</string>
+    <string name="ncutils_error">Error occurred!</string>
+    <string name="ncutils_network_error">Network Error</string>
+
+    <!-- permission -->
+    <string name="ncutils_permission_settings">Settings</string>
+    <string name="ncutils_permission_group_calendar">Calendar</string>
+    <string name="ncutils_permission_group_camera">Camera</string>
+    <string name="ncutils_permission_group_contacts">Contacts</string>
+    <string name="ncutils_permission_group_location">Location</string>
+    <string name="ncutils_permission_group_microphone">Microphone</string>
+    <string name="ncutils_permission_group_phone">Phone</string>
+    <string name="ncutils_permission_group_sensors">Sensors</string>
+    <string name="ncutils_permission_group_sms">SMS</string>
+    <string name="ncutils_permission_group_storage">Storage</string>
+    <string name="ncutils_permission_rationale_general">Permission is required to access the following phone function(s):\n</string>
+    <string name="ncutils_permission_rationale_general_part2">to use the following feature(s):\n</string>
+    <string name="ncutils_permission_denied_general">App has no access to one or more of the following phone function(s):\n</string>
+    <string name="ncutils_permission_denied_general_part2">\nAffected feature(s):\n</string>
+    <string name="ncutils_permission_denied_general_instructions">\nThe app permissions can be configured in phone Settings.</string>
+
+    <!-- Calendar -->
+    <string name="ncutils_permission_rationale_feature_access_calendar">캘린더 액세스</string>
+
+    <!-- Camera -->
+    <string name="ncutils_permission_rationale_feature_scan_qr_code">QR 코드 스캔</string>
+    <string name="ncutils_permission_rationale_feature_take_picture">사진</string>
+
+    <!-- Microphone -->
+    <string name="ncutils_permission_rationale_feature_voice_call">음성 통화</string>
+    <string name="ncutils_permission_rationale_feature_voice_messaging">음성 메일 보내기</string>
+    <string name="ncutils_permission_rationale_feature_record_voice">음성 녹음</string>
+
+    <!-- Camera and Microphone -->
+    <string name="ncutils_permission_rationale_feature_take_video">비디오 녹화</string>
+    <string name="ncutils_permission_rationale_feature_video_call">화상 통화</string>
+
+    <!-- Contacts -->
+    <string name="ncutils_permission_rationale_feature_access_contacts">주소록 액세스</string>
+    <string name="ncutils_permission_rationale_feature_recommend_new_friends">연락처에서 친구</string>
+
+    <!-- Location -->
+    <string name="ncutils_permission_rationale_feature_auto_fill_area_code">자동으로 코드를 작성하여</string>
+    <string name="ncutils_permission_rationale_feature_share_location">공유 위치</string>
+    <string name="ncutils_permission_rationale_feature_locate_user">타겟팅</string>
+
+    <!-- Storage -->
+    <string name="ncutils_permission_rationale_feature_pick_picture">저장 장치에서 그림 선택</string>
+    <string name="ncutils_permission_rationale_feature_pick_video">저장 장치에서 비디오 선택</string>
+    <string name="ncutils_permission_rationale_feature_pick_audio">저장 장치에서 오디오 선택</string>
+    <string name="ncutils_permission_rationale_feature_pick_folder">저장 장치에서 폴더 선택</string>
+    <string name="ncutils_permission_rationale_feature_pick_file">저장 장치에서 파일 선택</string>
+    <string name="ncutils_permission_rationale_feature_save_media_to_storage">저장 저장 매체 전화</string>
+    <string name="ncutils_permission_rationale_feature_save_content_to_storage">전화에 저장된 내용을 저장</string>
+
+    <!-- Telephone -->
+    <string name="ncutils_permission_rationale_feature_access_phone_features">전화 기능에 액세스</string>
+    <string name="ncutils_permission_rationale_feature_get_phone_number">전화 번호 받기</string>
+    <string name="ncutils_permission_rationale_feature_make_phone_call">전화 통화</string>
+
+    <!-- SMS -->
+    <string name="ncutils_permission_rationale_feature_access_sms">SMS 및 MMS 기능에 액세스</string>
+    <string name="ncutils_permission_rationale_send_sms">SMS 보내기</string>
+    <string name="ncutils_permission_rationale_read_sms">SMS 읽기</string>
+
+    <!-- Sensors -->
+    <string name="ncutils_permission_rationale_feature_access_sensors">전화 센서에 액세스</string>
+
+    <!-- BLE -->
+    <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">주변 장치 Bluetooth 장치 검색</string>
+    
+</resources>

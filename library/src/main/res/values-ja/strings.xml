@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- common -->
+    <string name="ncutils_yes">はい</string>
+    <string name="ncutils_no">いいえ</string>
+    <string name="ncutils_confirm">OK</string>
+    <string name="ncutils_cancel">キャンセル</string>
+    <string name="ncutils_ok">OK</string>
+    <string name="ncutils_loading">読み込み中</string>
+    <string name="ncutils_please_wait">お待ちください...</string>
+    <string name="ncutils_button_allow">許可</string>
+    <string name="ncutils_button_deny">拒否</string>
+    <string name="ncutils_done">完了</string>
+    <string name="ncutils_error">エラーが発生しました。 </string>
+    <string name="ncutils_network_error">ネットワークの問題</string>
+
+    <!-- permission -->
+    <string name="ncutils_permission_settings">設定</string>
+    <string name="ncutils_permission_group_calendar">カレンダー</string>
+    <string name="ncutils_permission_group_camera">カメラ</string>
+    <string name="ncutils_permission_group_contacts">連絡先</string>
+    <string name="ncutils_permission_group_location">所在地</string>
+    <string name="ncutils_permission_group_microphone">マイク</string>
+    <string name="ncutils_permission_group_phone">電話</string>
+    <string name="ncutils_permission_group_sensors">センサー</string>
+    <string name="ncutils_permission_group_sms">SMS</string>
+    <string name="ncutils_permission_group_storage">ストレージ</string>
+    <string name="ncutils_permission_rationale_general">次の電話機能には次のものが必要です。\n</string>
+    <string name="ncutils_permission_rationale_general_part2">次の機能を楽しめるように\n</string>
+    <string name="ncutils_permission_denied_general">このプログラムは次の電話機能にアクセスできません：\n</string>
+    <string name="ncutils_permission_denied_general_part2">\n影響を受ける機能:\n</string>
+    <string name="ncutils_permission_denied_general_instructions">\n電話の設定でプログラムの権限を設定できます。</string>
+
+    <!-- Calendar -->
+    <string name="ncutils_permission_rationale_feature_access_calendar">カレンダーにアクセス</string>
+
+    <!-- Camera -->
+    <string name="ncutils_permission_rationale_feature_scan_qr_code">QRコードをスキャン</string>
+    <string name="ncutils_permission_rationale_feature_take_picture">写真</string>
+
+    <!-- Microphone -->
+    <string name="ncutils_permission_rationale_feature_voice_call">音声電話</string>
+    <string name="ncutils_permission_rationale_feature_voice_messaging">ボイスメールを送信する</string>
+    <string name="ncutils_permission_rationale_feature_record_voice">音声を録音</string>
+
+    <!-- Camera and Microphone -->
+    <string name="ncutils_permission_rationale_feature_take_video">ビデオの録画</string>
+    <string name="ncutils_permission_rationale_feature_video_call">ビデオ通話</string>
+
+    <!-- Contacts -->
+    <string name="ncutils_permission_rationale_feature_access_contacts">アクセスアドレス帳</string>
+    <string name="ncutils_permission_rationale_feature_recommend_new_friends">アドレス帳のおすすめの友達</string>
+
+    <!-- Location -->
+    <string name="ncutils_permission_rationale_feature_auto_fill_area_code">自動入力エリアコード</string>
+    <string name="ncutils_permission_rationale_feature_share_location">共有場所</string>
+    <string name="ncutils_permission_rationale_feature_locate_user">ターゲティング</string>
+
+    <!-- Storage -->
+    <string name="ncutils_permission_rationale_feature_pick_picture">ストレージから写真を選択</string>
+    <string name="ncutils_permission_rationale_feature_pick_video">ストレージからビデオを選択</string>
+    <string name="ncutils_permission_rationale_feature_pick_audio">ストレージから音声を選択</string>
+    <string name="ncutils_permission_rationale_feature_pick_folder">ストレージからフォルダを選択</string>
+    <string name="ncutils_permission_rationale_feature_pick_file">ストレージからファイルを選択</string>
+    <string name="ncutils_permission_rationale_feature_save_media_to_storage">メディアをストレージに保存する</string>
+    <string name="ncutils_permission_rationale_feature_save_content_to_storage">コンテンツをストレージに保存する</string>
+
+    <!-- Telephone -->
+    <string name="ncutils_permission_rationale_feature_access_phone_features">電話機能にアクセスする</string>
+    <string name="ncutils_permission_rationale_feature_get_phone_number">電話番号を取得する</string>
+    <string name="ncutils_permission_rationale_feature_make_phone_call">電話</string>
+
+    <!-- SMS -->
+    <string name="ncutils_permission_rationale_feature_access_sms">SMSおよびMMS機能へのアクセス</string>
+    <string name="ncutils_permission_rationale_send_sms">SMSを送信</string>
+    <string name="ncutils_permission_rationale_read_sms">SMSを読む</string>
+
+    <!-- Sensors -->
+    <string name="ncutils_permission_rationale_feature_access_sensors">電話センサーへのアクセス</string>
+
+    <!-- BLE -->
+    <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">周囲のBluetoothデバイスをスキャンする</string>
+
+</resources>

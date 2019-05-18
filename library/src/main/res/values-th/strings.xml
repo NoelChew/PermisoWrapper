@@ -1,0 +1,83 @@
+<resources>
+
+    <!-- common -->
+    <string name="ncutils_yes">ใช่</string>
+    <string name="ncutils_no">ไม่มี</string>
+    <string name="ncutils_confirm">ยืนยัน</string>
+    <string name="ncutils_cancel">ยกเลิก</string>
+    <string name="ncutils_ok">ตกลง</string>
+    <string name="ncutils_loading">กำลังโหลด</string>
+    <string name="ncutils_please_wait">โปรดรอ...</string>
+    <string name="ncutils_button_allow">อนุญาต</string>
+    <string name="ncutils_button_deny">ปฏิเสธ</string>
+    <string name="ncutils_done">เสร็จแล้ว</string>
+    <string name="ncutils_error">เกิดข้อผิดพลาด!</string>
+    <string name="ncutils_network_error">ข้อผิดพลาดเครือข่าย</string>
+
+    <!-- permission -->
+    <string name="ncutils_permission_settings">การตั้งค่า</string>
+    <string name="ncutils_permission_group_calendar">ปฏิทิน</string>
+    <string name="ncutils_permission_group_camera">กล้อง</string>
+    <string name="ncutils_permission_group_contacts">ผู้ติดต่อ</string>
+    <string name="ncutils_permission_group_location">ตำแหน่ง</string>
+    <string name="ncutils_permission_group_microphone">ไมโครโฟน</string>
+    <string name="ncutils_permission_group_phone">โทรศัพท์</string>
+    <string name="ncutils_permission_group_sensors">เซนเซอร์</string>
+    <string name="ncutils_permission_group_sms">SMS</string>
+    <string name="ncutils_permission_group_storage">ที่เก็บข้อมูล</string>
+    <string name="ncutils_permission_rationale_general">จำเป็นต้องได้รับอนุญาตในการเข้าถึงฟังก์ชั่นโทรศัพท์ต่อไปนี้:\n</string>
+    <string name="ncutils_permission_rationale_general_part2">เพื่อใช้คุณสมบัติต่อไปนี้:\n</string>
+    <string name="ncutils_permission_denied_general">แอปไม่มีการเข้าถึงฟังก์ชั่นโทรศัพท์ต่อไปนี้อย่างน้อยหนึ่งรายการ:\n</string>
+    <string name="ncutils_permission_denied_general_part2">\nคุณสมบัติที่ได้รับผลกระทบ:\n</string>
+    <string name="ncutils_permission_denied_general_instructions">\nสามารถกำหนดค่าการอนุญาตของแอพได้ในการตั้งค่าโทรศัพท์</string>
+
+    <!-- Calendar -->
+    <string name="ncutils_permission_rationale_feature_access_calendar">เข้าถึงปฏิทิน</string>
+
+    <!-- Camera -->
+    <string name="ncutils_permission_rationale_feature_scan_qr_code">สแกนรหัส QR</string>
+    <string name="ncutils_permission_rationale_feature_take_picture">ถ่ายภาพด้วยกล้อง</string>
+
+    <!-- Microphone -->
+    <string name="ncutils_permission_rationale_feature_voice_call">สายสนทนา</string>
+    <string name="ncutils_permission_rationale_feature_voice_messaging">ส่งข้อความเสียง</string>
+    <string name="ncutils_permission_rationale_feature_record_voice">บันทึกเสียง</string>
+
+    <!-- Camera and Microphone -->
+    <string name="ncutils_permission_rationale_feature_take_video">บันทึกวิดีโอด้วยกล้อง</string>
+    <string name="ncutils_permission_rationale_feature_video_call">แฮงเอาท์วิดีโอ</string>
+
+    <!-- Contacts -->
+    <string name="ncutils_permission_rationale_feature_access_contacts">เข้าถึงผู้ติดต่อ</string>
+    <string name="ncutils_permission_rationale_feature_recommend_new_friends">แนะนำเพื่อนใหม่จากผู้ติดต่อ</string>
+
+    <!-- Location -->
+    <string name="ncutils_permission_rationale_feature_auto_fill_area_code">ป้อนรหัสพื้นที่อัตโนมัติ</string>
+    <string name="ncutils_permission_rationale_feature_share_location">แบ่งปันตำแหน่ง</string>
+    <string name="ncutils_permission_rationale_feature_locate_user">ค้นหาผู้ใช้</string>
+
+    <!-- Storage -->
+    <string name="ncutils_permission_rationale_feature_pick_picture">เลือกรูปภาพจากที่เก็บ</string>
+    <string name="ncutils_permission_rationale_feature_pick_video">เลือกวิดีโอจากที่เก็บ</string>
+    <string name="ncutils_permission_rationale_feature_pick_audio">เลือกเสียงจากที่เก็บ</string>
+    <string name="ncutils_permission_rationale_feature_pick_folder">เลือกโฟลเดอร์จากที่เก็บ</string>
+    <string name="ncutils_permission_rationale_feature_pick_file">เลือกไฟล์จากที่เก็บ</string>
+    <string name="ncutils_permission_rationale_feature_save_media_to_storage">บันทึกสื่อไปยังที่เก็บข้อมูล</string>
+    <string name="ncutils_permission_rationale_feature_save_content_to_storage">บันทึกเนื้อหาลงในที่เก็บ</string>
+
+    <!-- Telephone -->
+    <string name="ncutils_permission_rationale_feature_access_phone_features">คุณสมบัติการเข้าถึงโทรศัพท์</string>
+    <string name="ncutils_permission_rationale_feature_get_phone_number">รับหมายเลขโทรศัพท์</string>
+    <string name="ncutils_permission_rationale_feature_make_phone_call">โทรออก</string>
+
+    <!-- SMS -->
+    <string name="ncutils_permission_rationale_feature_access_sms">เข้าถึงคุณสมบัติ SMS และ MMS</string>
+    <string name="ncutils_permission_rationale_send_sms">ส่ง SMS</string>
+    <string name="ncutils_permission_rationale_read_sms">อ่าน SMS</string>
+
+    <!-- Sensors -->
+    <string name="ncutils_permission_rationale_feature_access_sensors">เซ็นเซอร์โทรศัพท์เข้าถึง</string>
+
+    <!-- BLE -->
+    <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">สแกนอุปกรณ์บลูทู ธ โดยรอบ</string>
+</resources>
