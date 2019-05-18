@@ -8,9 +8,13 @@ import java.util.ArrayList;
 public class GetDangerousActionArrayList {
     public static ArrayList<DangerousAction> getDangerousActions() {
         ArrayList<DangerousAction> dangerousActionArrayList = new ArrayList<>();
+        dangerousActionArrayList.add(new DangerousAction("Pick Folder/File"));
+        dangerousActionArrayList.add(new DangerousAction("Scan QR Code"));
         dangerousActionArrayList.add(new DangerousAction("Pick Picture/Video"));
         dangerousActionArrayList.add(new DangerousAction("Take Picture"));
         dangerousActionArrayList.add(new DangerousAction("Take Video"));
+        dangerousActionArrayList.add(new DangerousAction("Pick Audio"));
+        dangerousActionArrayList.add(new DangerousAction("Record Voice"));
         dangerousActionArrayList.add(new DangerousAction("Send Voice Message"));
         dangerousActionArrayList.add(new DangerousAction("Make Voice Call"));
         dangerousActionArrayList.add(new DangerousAction("Make Video Call"));
