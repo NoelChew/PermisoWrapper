@@ -26,6 +26,21 @@ public class GetPermissionArrayList {
                             }
                         });
                     }
+                }, new GetPermission() {
+                    @Override
+                    public void get() {
+                        PermisoWrapper.getPermissionScanQRCode(context, new PermisoWrapper.PermissionListener() {
+                            @Override
+                            public void onPermissionGranted() {
+                                toast(context, "Permission to scan QR code GRANTED. Do something here.");
+                            }
+
+                            @Override
+                            public void onPermissionDenied() {
+                                toast(context, "Permission to scan QR code DENIED.");
+                            }
+                        });
+                    }
                 },
                 new GetPermission() {
                     @Override
