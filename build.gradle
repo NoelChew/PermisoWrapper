@@ -25,3 +25,8 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    androidx_appcompat_version = '1.1.0'
+    androidx_recycler_view_version = '1.1.0'
+}

@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
 
     defaultConfig {
         applicationId "com.noelchew.permisowrapper.demo"
         minSdkVersion 15
-        targetSdkVersion 28
-        versionCode 10
-        versionName "0.2.4"
+        targetSdkVersion 29
+        versionCode 11
+        versionName "0.3.0"
     }
     buildTypes {
         release {
@@ -22,6 +22,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
     api project(':library')
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation "androidx.appcompat:appcompat:$rootProject.androidx_appcompat_version"
+    implementation "androidx.recyclerview:recyclerview:$rootProject.androidx_recycler_view_version"
 }
