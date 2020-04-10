@@ -103,19 +103,19 @@ public class PermisoWrapper {
     public static void getPermissionShareLocation(final Context context, final PermissionListener listener) {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_share_location);
-        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_FINE_LOCATION);
     }
 
     public static void getPermissionLocateUser(final Context context, final PermissionListener listener) {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_locate_user);
-        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_FINE_LOCATION);
     }
 
     public static void getPermissionAutoFillAreaCode(final Context context, final PermissionListener listener) {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_auto_fill_area_code);
-        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_FINE_LOCATION);
     }
 
     public static void getPermissionAccessContacts(final Context context, final PermissionListener listener) {
