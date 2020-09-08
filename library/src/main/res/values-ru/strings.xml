@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- common -->
+    <string name="ncutils_yes">Да</string>
+    <string name="ncutils_no">Нет</string>
+    <string name="ncutils_confirm">Подтвердить</string>
+    <string name="ncutils_cancel">Отмена</string>
+    <string name="ncutils_ok">OK</string>
+    <string name="ncutils_loading">Загрузка</string>
+    <string name="ncutils_please_wait">Пожалуйста, подождите...</string>
+    <string name="ncutils_button_allow">Разрешить</string>
+    <string name="ncutils_button_deny">Отказать</string>
+    <string name="ncutils_done">Завершить</string>
+    <string name="ncutils_error">Произошла ошибка!</string>
+    <string name="ncutils_network_error">Сетевая ошибка!</string>
+
+    <!-- permission -->
+    <string name="ncutils_permission_settings">Настройки</string>
+    <string name="ncutils_permission_group_calendar">Календарь</string>
+    <string name="ncutils_permission_group_camera">Камера</string>
+    <string name="ncutils_permission_group_contacts">Контакты</string>
+    <string name="ncutils_permission_group_location">Расположение</string>
+    <string name="ncutils_permission_group_microphone">Микрофон</string>
+    <string name="ncutils_permission_group_phone">Телефон</string>
+    <string name="ncutils_permission_group_sensors">Сенсор</string>
+    <string name="ncutils_permission_group_sms">SMS</string>
+    <string name="ncutils_permission_group_storage">Хранилище</string>
+    <string name="ncutils_permission_rationale_general">Требуется разрешение для доступа к следующим функциям телефона:\n</string>
+    <string name="ncutils_permission_rationale_general_part2">использовать следующие функции:\n</string>
+    <string name="ncutils_permission_denied_general">Приложение не имеет доступа к одной или нескольким из следующих функций телефона:\n</string>
+    <string name="ncutils_permission_denied_general_part2">\nЗатронутые функции:\n</string>
+    <string name="ncutils_permission_denied_general_instructions">\nРазрешения приложения можно настроить в настройках телефона.</string>
+
+    <!-- Calendar -->
+    <string name="ncutils_permission_rationale_feature_access_calendar">Доступ к календарю</string>
+
+    <!-- Camera -->
+    <string name="ncutils_permission_rationale_feature_scan_qr_code">Сканировать QR-код</string>
+    <string name="ncutils_permission_rationale_feature_take_picture">Сделайте снимок с помощью камеры</string>
+
+    <!-- Microphone -->
+    <string name="ncutils_permission_rationale_feature_voice_call">Голосовой звонок</string>
+    <string name="ncutils_permission_rationale_feature_voice_messaging">Отправить голосовые сообщения</string>
+    <string name="ncutils_permission_rationale_feature_record_voice">Запись голоса</string>
+
+    <!-- Camera and Microphone -->
+    <string name="ncutils_permission_rationale_feature_take_video">Запись видео с камеры</string>
+    <string name="ncutils_permission_rationale_feature_video_call">Видеозвонок</string>
+
+    <!-- Contacts -->
+    <string name="ncutils_permission_rationale_feature_access_contacts">Доступ к контактам</string>
+    <string name="ncutils_permission_rationale_feature_recommend_new_friends">Рекомендовать новых друзей из контактов</string>
+
+    <!-- Location -->
+    <string name="ncutils_permission_rationale_feature_auto_fill_area_code">Автозаполнение кода города</string>
+    <string name="ncutils_permission_rationale_feature_share_location">Поделиться местоположением</string>
+    <string name="ncutils_permission_rationale_feature_locate_user">Найдите пользователя</string>
+
+    <!-- Storage -->
+    <string name="ncutils_permission_rationale_feature_pick_picture">Выбрать изображение из хранилища</string>
+    <string name="ncutils_permission_rationale_feature_pick_video">Выбрать видео из хранилища</string>
+    <string name="ncutils_permission_rationale_feature_pick_audio">Выбрать аудио из хранилища</string>
+    <string name="ncutils_permission_rationale_feature_pick_folder">Выбрать папку из хранилища</string>
+    <string name="ncutils_permission_rationale_feature_pick_file">Выбрать файл из хранилища</string>
+    <string name="ncutils_permission_rationale_feature_save_media_to_storage">Сохранить медиа в хранилище</string>
+    <string name="ncutils_permission_rationale_feature_save_content_to_storage">Сохранить содержимое в хранилище</string>
+
+    <!-- Telephone -->
+    <string name="ncutils_permission_rationale_feature_access_phone_features">Доступ к функциям телефона</string>
+    <string name="ncutils_permission_rationale_feature_get_phone_number">Получить номер телефона</string>
+    <string name="ncutils_permission_rationale_feature_make_phone_call">Сделать телефонный звонок</string>
+    <string name="ncutils_permission_rationale_feature_answer_phone_call">Ответить на телефонный звонок</string>
+
+    <!-- SMS -->
+    <string name="ncutils_permission_rationale_feature_access_sms">Доступ к функциям SMS и MMS</string>
+    <string name="ncutils_permission_rationale_send_sms">Отправить SMS</string>
+    <string name="ncutils_permission_rationale_read_sms">Прочитать SMS</string>
+
+    <!-- Sensors -->
+    <string name="ncutils_permission_rationale_feature_access_sensors">Разрешения сенсором телефона</string>
+
+    <!-- BLE -->
+    <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">Сканирование окружающих Bluetooth устройств</string>
+</resources>

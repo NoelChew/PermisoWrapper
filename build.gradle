@@ -27,6 +27,6 @@ task clean(type: Delete) {
 }
 
 ext {
-    androidx_appcompat_version = '1.1.0'
+    androidx_appcompat_version = '1.2.0'
     androidx_recycler_view_version = '1.1.0'
 }

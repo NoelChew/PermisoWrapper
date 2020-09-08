@@ -70,6 +70,7 @@
     <string name="ncutils_permission_rationale_feature_access_phone_features">Fonctionnalités d\'accès au téléphone</string>
     <string name="ncutils_permission_rationale_feature_get_phone_number">Obtenir le numéro de téléphone</string>
     <string name="ncutils_permission_rationale_feature_make_phone_call">Faire un appel téléphonique</string>
+    <string name="ncutils_permission_rationale_feature_answer_phone_call">Répondre un appel téléphonique</string>
 
     <!-- SMS -->
     <string name="ncutils_permission_rationale_feature_access_sms">Accéder aux fonctions SMS et MMS</string>

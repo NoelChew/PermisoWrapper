@@ -69,6 +69,7 @@
     <string name="ncutils_permission_rationale_feature_access_phone_features">電話機能にアクセスする</string>
     <string name="ncutils_permission_rationale_feature_get_phone_number">電話番号を取得する</string>
     <string name="ncutils_permission_rationale_feature_make_phone_call">電話</string>
+    <string name="ncutils_permission_rationale_feature_answer_phone_call">電話に出る</string>
 
     <!-- SMS -->
     <string name="ncutils_permission_rationale_feature_access_sms">SMSおよびMMS機能へのアクセス</string>

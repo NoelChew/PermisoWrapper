@@ -69,6 +69,7 @@
     <string name="ncutils_permission_rationale_feature_access_phone_features">Acesso aos recursos do telefone.</string>
     <string name="ncutils_permission_rationale_feature_get_phone_number">Obter número de telefone</string>
     <string name="ncutils_permission_rationale_feature_make_phone_call">Efetuar uma chamada telefônica</string>
+    <string name="ncutils_permission_rationale_feature_answer_phone_call">Atender telefonema</string>
 
     <!-- SMS -->
     <string name="ncutils_permission_rationale_feature_access_sms">Acessar as funções SMS e MMS</string>
