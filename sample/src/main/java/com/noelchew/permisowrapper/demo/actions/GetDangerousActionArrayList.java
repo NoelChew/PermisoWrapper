@@ -29,6 +29,7 @@ public class GetDangerousActionArrayList {
         dangerousActionArrayList.add(new DangerousAction("Access Phone Features"));
         dangerousActionArrayList.add(new DangerousAction("Get Phone Number"));
         dangerousActionArrayList.add(new DangerousAction("Make Phone Call"));
+        dangerousActionArrayList.add(new DangerousAction("Answer Phone Call"));
         dangerousActionArrayList.add(new DangerousAction("Access SMS"));
         dangerousActionArrayList.add(new DangerousAction("Send SMS"));
         dangerousActionArrayList.add(new DangerousAction("Read SMS"));

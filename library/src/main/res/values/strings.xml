@@ -69,6 +69,7 @@
     <string name="ncutils_permission_rationale_feature_access_phone_features">Access Phone Features</string>
     <string name="ncutils_permission_rationale_feature_get_phone_number">Get Phone Number</string>
     <string name="ncutils_permission_rationale_feature_make_phone_call">Make Phone Call</string>
+    <string name="ncutils_permission_rationale_feature_answer_phone_call">Answer Phone Call</string>
 
     <!-- SMS -->
     <string name="ncutils_permission_rationale_feature_access_sms">Access SMS and MMS Features</string>

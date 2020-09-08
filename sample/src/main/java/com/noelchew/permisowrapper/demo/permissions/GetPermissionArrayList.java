@@ -349,6 +349,22 @@ public class GetPermissionArrayList {
                 new GetPermission() {
                     @Override
                     public void get() {
+                        PermisoWrapper.getPermissionAnswerPhoneCall(context, new PermisoWrapper.PermissionListener() {
+                            @Override
+                            public void onPermissionGranted() {
+                                toast(context, "Permission to answer phone call GRANTED. Do something here.");
+                            }
+
+                            @Override
+                            public void onPermissionDenied() {
+                                toast(context, "Permission to answer phone call DENIED.");
+                            }
+                        });
+                    }
+                },
+                new GetPermission() {
+                    @Override
+                    public void get() {
                         PermisoWrapper.getPermissionAccessSMS(context, new PermisoWrapper.PermissionListener() {
                             @Override
                             public void onPermissionGranted() {

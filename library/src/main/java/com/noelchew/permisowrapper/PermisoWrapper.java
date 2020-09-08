@@ -173,6 +173,12 @@ public class PermisoWrapper {
         _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.CALL_PHONE);
     }
 
+    public static void getPermissionAnswerPhoneCall(final Context context, final PermissionListener listener) {
+        ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
+        rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_answer_phone_call);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ANSWER_PHONE_CALLS);
+    }
+
     public static void getPermissionAccessSMS(final Context context, final PermissionListener listener) {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_access_sms);

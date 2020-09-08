@@ -7,8 +7,8 @@ android {
         applicationId "com.noelchew.permisowrapper.demo"
         minSdkVersion 15
         targetSdkVersion 29
-        versionCode 12
-        versionName "0.3.1"
+        versionCode 13
+        versionName "0.3.2"
     }
     buildTypes {
         release {
