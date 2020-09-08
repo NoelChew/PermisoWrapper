@@ -154,6 +154,7 @@ public class PermisoWrapper {
         _getPermission(context, listener, rationaleStringResourceArrayList,
                 Manifest.permission.READ_PHONE_STATE,
                 Manifest.permission.CALL_PHONE,
+                Manifest.permission.ANSWER_PHONE_CALLS,
                 Manifest.permission.READ_CALL_LOG,
                 Manifest.permission.WRITE_CALL_LOG,
                 Manifest.permission.ADD_VOICEMAIL,
@@ -357,6 +358,7 @@ public class PermisoWrapper {
             return R.string.ncutils_permission_group_microphone;
         } else if (permission.equalsIgnoreCase(Manifest.permission.READ_PHONE_STATE) ||
                 permission.equalsIgnoreCase(Manifest.permission.CALL_PHONE) ||
+                permission.equalsIgnoreCase(Manifest.permission.ANSWER_PHONE_CALLS) ||
                 permission.equalsIgnoreCase(Manifest.permission.READ_CALL_LOG) ||
                 permission.equalsIgnoreCase(Manifest.permission.WRITE_CALL_LOG) ||
                 permission.equalsIgnoreCase(Manifest.permission.ADD_VOICEMAIL) ||
