@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- common -->
+    <string name="ncutils_yes">Yes</string>
+    <string name="ncutils_no">नहीं</string>
+    <string name="ncutils_confirm">पुष्टि करें</string>
+    <string name="ncutils_cancel">रद्द करें</string>
+    <string name="ncutils_ok">OK</string>
+    <string name="ncutils_loading">लोड हो रहा है</string>
+    <string name="ncutils_please_wait">कृपया प्रतीक्षा करें</string>
+    <string name="ncutils_button_allow">अनुमति दें</string>
+    <string name="ncutils_button_deny">इनकार</string>
+    <string name="ncutils_done">संपन्न</string>
+    <string name="ncutils_error">त्रुटि हुई!</string>
+    <string name="ncutils_network_error">नेटवर्क त्रुटि</string>
+
+    <!-- permission -->
+    <string name="ncutils_permission_settings">सेटिंग्स</string>
+    <string name="ncutils_permission_group_calendar">कैलेंडर</string>
+    <string name="ncutils_permission_group_camera">कैमरा</string>
+    <string name="ncutils_permission_group_contacts">संपर्क</string>
+    <string name="ncutils_permission_group_location">स्थान</string>
+    <string name="ncutils_permission_group_microphone">माइक्रोफोन</string>
+    <string name="ncutils_permission_group_phone">फोन</string>
+    <string name="ncutils_permission_group_sensors">सेंसर</string>
+    <string name="ncutils_permission_group_sms">SMS</string>
+    <string name="ncutils_permission_group_storage">संग्रहण</string>
+    <string name="ncutils_permission_rationale_general">निम्नलिखित फ़ोन फ़ंक्शन का उपयोग करने के लिए अनुमति आवश्यक है::\n</string>
+    <string name="ncutils_permission_rationale_general_part2">निम्नलिखित सुविधा का उपयोग करने के लिए:\n</string>
+    <string name="ncutils_permission_denied_general">ऐप में निम्नलिखित फोन फ़ंक्शन में से एक या अधिक का उपयोग नहीं है:\n</string>
+    <string name="ncutils_permission_denied_general_part2">\nप्रभावित सुविधा:\n</string>
+    <string name="ncutils_permission_denied_general_instructions">\nऐप की अनुमतियां फोन सेटिंग्स में कॉन्फ़िगर की जा सकती हैं।</string>
+
+    <!-- Calendar -->
+    <string name="ncutils_permission_rationale_feature_access_calendar">पहुंच कैलेंडर</string>
+
+    <!-- Camera -->
+    <string name="ncutils_permission_rationale_feature_scan_qr_code">QR कोड स्कैन करें</string>
+    <string name="ncutils_permission_rationale_feature_take_picture">कैमरा के साथ चित्र लें</string>
+
+    <!-- Microphone -->
+    <string name="ncutils_permission_rationale_feature_voice_call">वॉइस कॉल</string>
+    <string name="ncutils_permission_rationale_feature_voice_messaging">वॉइस संदेश भेजें</string>
+    <string name="ncutils_permission_rationale_feature_record_voice">रिकॉर्ड आवाज / वीडियो रिकॉर्ड</string>
+
+    <!-- Camera and Microphone -->
+    <string name="ncutils_permission_rationale_feature_take_video">कैमरा के साथ वीडियो रिकॉर्ड करें</string>
+    <string name="ncutils_permission_rationale_feature_video_call">वीडियो कॉल</string>
+
+    <!-- Contacts -->
+    <string name="ncutils_permission_rationale_feature_access_contacts">संपर्क एक्सेस करें</string>
+    <string name="ncutils_permission_rationale_feature_recommend_new_friends">संपर्कों से नए दोस्तों की सिफारिश करें</string>
+
+    <!-- Location -->
+    <string name="ncutils_permission_rationale_feature_auto_fill_area_code">ऑटो भरण क्षेत्र कोड</string>
+    <string name="ncutils_permission_rationale_feature_share_location">स्थान साझा करें</string>
+    <string name="ncutils_permission_rationale_feature_locate_user">उपयोगकर्ता का पता लगाएँ</string>
+
+    <!-- Storage -->
+    <string name="ncutils_permission_rationale_feature_pick_picture">स्टोरेज से चित्र चुनें</string>
+    <string name="ncutils_permission_rationale_feature_pick_video">स्टोरेज से वीडियो चुनें</string>
+    <string name="ncutils_permission_rationale_feature_pick_audio">संग्रहण से ऑडियो का चयन करें</string>
+    <string name="ncutils_permission_rationale_feature_pick_folder">स्टोरेज से फ़ोल्डर चुनें</string>
+    <string name="ncutils_permission_rationale_feature_pick_file">स्टोरेज से फाइल चुनें</string>
+    <string name="ncutils_permission_rationale_feature_save_media_to_storage">मीडिया को स्टोरेज में सहेजें</string>
+    <string name="ncutils_permission_rationale_feature_save_content_to_storage">संग्रहण में सामग्री सहेजें</string>
+
+    <!-- Telephone -->
+    <string name="ncutils_permission_rationale_feature_access_phone_features">एक्सेस फ़ोन सुविधाएँ</string>
+    <string name="ncutils_permission_rationale_feature_get_phone_number">फ़ोन नंबर प्राप्त करें</string>
+    <string name="ncutils_permission_rationale_feature_make_phone_call">फ़ोन कॉल करें</string>
+    <string name="ncutils_permission_rationale_feature_answer_phone_call">फोन कॉल का जवाब दें</string>
+
+    <!-- SMS -->
+    <string name="ncutils_permission_rationale_feature_access_sms">एक्सेस एसएमएस और MMS विशेषताएँ</string>
+    <string name="ncutils_permission_rationale_send_sms">SMS भेजें</string>
+    <string name="ncutils_permission_rationale_read_sms">SMS पढ़ें</string>
+
+    <!-- Sensors -->
+    <string name="ncutils_permission_rationale_feature_access_sensors">एक्सेस फ़ोन सेंसर</string>
+
+    <!-- BLE -->
+    <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">आसपास के ब्लूटूथ डिवाइस को स्कैन करें</string>
+</resources>
