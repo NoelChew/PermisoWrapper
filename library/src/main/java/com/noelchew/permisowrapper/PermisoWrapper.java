@@ -61,7 +61,7 @@ public class PermisoWrapper {
     public static void getPermissionTakePicture(final Context context, final PermissionListener listener) {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_take_picture);
-        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE);
     }
 
     public static void getPermissionTakePictureWithoutSave(final Context context, final PermissionListener listener) {
@@ -73,19 +73,19 @@ public class PermisoWrapper {
     public static void getPermissionTakeVideo(final Context context, final PermissionListener listener) {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_take_video);
-        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE);
     }
 
     public static void getPermissionRecordVoice(final Context context, final PermissionListener listener) {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_record_voice);
-        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.RECORD_AUDIO, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE);
     }
 
     public static void getPermissionVoiceMessage(final Context context, final PermissionListener listener) {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_voice_messaging);
-        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.RECORD_AUDIO, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE);
     }
 
     public static void getPermissionVoiceCall(final Context context, final PermissionListener listener) {
@@ -103,19 +103,19 @@ public class PermisoWrapper {
     public static void getPermissionShareLocation(final Context context, final PermissionListener listener) {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_share_location);
-        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_FINE_LOCATION);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION);
     }
 
     public static void getPermissionLocateUser(final Context context, final PermissionListener listener) {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_locate_user);
-        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_FINE_LOCATION);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION);
     }
 
     public static void getPermissionAutoFillAreaCode(final Context context, final PermissionListener listener) {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_auto_fill_area_code);
-        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_FINE_LOCATION);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION);
     }
 
     public static void getPermissionAccessContacts(final Context context, final PermissionListener listener) {
