@@ -64,7 +64,7 @@ public class PermisoWrapper {
         _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE);
     }
 
-    public static void getPermissionTakePictureWithoutSave(final Context context, final PermissionListener listener) {
+    public static void getPermissionTakePictureWithoutExternalStorage(final Context context, final PermissionListener listener) {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_take_picture);
         _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.CAMERA);
@@ -80,6 +80,12 @@ public class PermisoWrapper {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_record_voice);
         _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.RECORD_AUDIO, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+    }
+
+    public static void getPermissionRecordVoiceWithoutExternalStorage(final Context context, final PermissionListener listener) {
+        ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
+        rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_record_voice);
+        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.RECORD_AUDIO);
     }
 
     public static void getPermissionVoiceMessage(final Context context, final PermissionListener listener) {
