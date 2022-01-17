@@ -2,6 +2,7 @@ package com.noelchew.permisowrapper;
 
 import android.Manifest;
 import android.app.Activity;
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -217,13 +218,19 @@ public class PermisoWrapper {
 
     // Bluetooth Low Energy
     public static void getPermissionScanSurroundingBLE(final Context context, final PermissionListener listener) {
-        ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
-        rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_scan_surrounding_ble);
-        _getPermission(context, listener, rationaleStringResourceArrayList,
-                Manifest.permission.BLUETOOTH_ADVERTISE,
-                Manifest.permission.BLUETOOTH_CONNECT,
-                Manifest.permission.BLUETOOTH_SCAN
-        );
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
+            rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_scan_surrounding_ble);
+            _getPermission(context, listener, rationaleStringResourceArrayList,
+                    Manifest.permission.BLUETOOTH_CONNECT,
+                    Manifest.permission.BLUETOOTH_SCAN
+            );
+        }
+        else{
+            ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
+            rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_scan_surrounding_ble);
+            _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION);
+        }
     }
 
     private static void _getPermission(final Context context, final PermissionListener listener, final ArrayList<Integer> rationaleStringResourceArrayList, final String... permissions) {
