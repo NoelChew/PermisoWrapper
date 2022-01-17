@@ -219,7 +219,11 @@ public class PermisoWrapper {
     public static void getPermissionScanSurroundingBLE(final Context context, final PermissionListener listener) {
         ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
         rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_scan_surrounding_ble);
-        _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_COARSE_LOCATION);
+        _getPermission(context, listener, rationaleStringResourceArrayList,
+                Manifest.permission.BLUETOOTH_ADVERTISE,
+                Manifest.permission.BLUETOOTH_CONNECT,
+                Manifest.permission.BLUETOOTH_SCAN
+        );
     }
 
     private static void _getPermission(final Context context, final PermissionListener listener, final ArrayList<Integer> rationaleStringResourceArrayList, final String... permissions) {
