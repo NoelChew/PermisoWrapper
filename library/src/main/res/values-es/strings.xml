@@ -80,6 +80,6 @@
     <string name="ncutils_permission_rationale_feature_access_sensors">Acceso a los sensores del teléfono</string>
 
     <!-- BLE -->
-    <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">Escanear dispositivos Bluetooth circundantes</string>\
+    <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">Escanear dispositivos Bluetooth circundantes</string>
 
 </resources>
