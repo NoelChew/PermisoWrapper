@@ -82,5 +82,6 @@
 
     <!-- BLE -->
     <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">Analyser les périphériques Bluetooth environnants</string>
+    <string name="ncutils_permission_rationale_feature_connect_ble">Connecter des appareils Bluetooth</string>
 
 </resources>

@@ -81,4 +81,5 @@
 
     <!-- BLE -->
     <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">สแกนอุปกรณ์บลูทู ธ โดยรอบ</string>
+    <string name="ncutils_permission_rationale_feature_connect_ble">เชื่อมต่ออุปกรณ์บลูทูธ</string>
 </resources>

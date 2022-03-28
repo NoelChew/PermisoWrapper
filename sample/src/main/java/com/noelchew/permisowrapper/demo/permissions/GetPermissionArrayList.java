@@ -429,15 +429,15 @@ public class GetPermissionArrayList {
                 new GetPermission() {
                     @Override
                     public void get() {
-                        PermisoWrapper.getPermissionScanSurroundingBLE(context, new PermisoWrapper.PermissionListener() {
+                        PermisoWrapper.getPermissionScanSurroundingAndConnectBLE(context, new PermisoWrapper.PermissionListener() {
                             @Override
                             public void onPermissionGranted() {
-                                toast(context, "Permission to scan surrounding for BLE. Do something here.");
+                                toast(context, "Permission to scan and connect surrounding BLE. Do something here.");
                             }
 
                             @Override
                             public void onPermissionDenied() {
-                                toast(context, "Permission to scan surrounding for BLE DENIED.");
+                                toast(context, "Permission to scan and connect surrounding BLE DENIED.");
                             }
                         });
                     }
