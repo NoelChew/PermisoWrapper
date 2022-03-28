@@ -80,6 +80,7 @@
     <string name="ncutils_permission_rationale_feature_access_sensors">전화 센서에 액세스</string>
 
     <!-- BLE -->
-    <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">주변 장치 Bluetooth 장치 검색</string>
+    <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">주변 블루투스 장치 스캔</string>
+    <string name="ncutils_permission_rationale_feature_connect_ble">블루투스 장치 연결</string>
     
 </resources>

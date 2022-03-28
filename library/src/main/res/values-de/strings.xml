@@ -56,5 +56,6 @@
     <string name="ncutils_permission_rationale_read_sms">SMS lesen</string>
     <string name="ncutils_permission_rationale_feature_access_sensors">Zugriff auf Telefonsensoren.</string>
     <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">Scannen Sie die umgebenden Bluetooth-Geräte</string>
+    <string name="ncutils_permission_rationale_feature_connect_ble">Verbinden Sie Bluetooth-Geräte</string>
 
 </resources>

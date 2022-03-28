@@ -230,10 +230,11 @@ public class PermisoWrapper {
     }
 
     // Bluetooth Low Energy
-    public static void getPermissionScanSurroundingBLE(final Context context, final PermissionListener listener) {
+    public static void getPermissionScanSurroundingAndConnectBLE(final Context context, final PermissionListener listener) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
             rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_scan_surrounding_ble);
+            rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_connect_ble);
             _getPermission(context, listener, rationaleStringResourceArrayList,
                     Manifest.permission.BLUETOOTH_CONNECT,
                     Manifest.permission.BLUETOOTH_SCAN
