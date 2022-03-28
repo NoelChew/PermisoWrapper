@@ -10,6 +10,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
+
 import androidx.core.app.ActivityCompat;
 import androidx.appcompat.app.AlertDialog;
 
@@ -31,6 +32,18 @@ public class PermisoWrapper {
      */
     public static void getPermission(final Context context, final PermissionListener listener, ArrayList<Integer> rationaleStringResourceArrayList, final String... permissions) {
         _getPermission(context, listener, rationaleStringResourceArrayList, permissions);
+    }
+
+    /***
+     *
+     * @param context
+     * @param listener
+     * @param reasonToRequestPermission Reason to request for this permission. For example: The app collects location data to enable tracking of user locations.
+     * @param permissionDeniedAffectedFeature Explanation of what happens when permission is not granted. For example: The app may not be able to perform optimally without access to this permission.
+     * @param permissions
+     */
+    public static void getPermissionWithCustomRationale(final Context context, final PermissionListener listener, final String reasonToRequestPermission, final String permissionDeniedAffectedFeature, final String... permissions) {
+        _getPermissionWithCustomRationale(context, listener, reasonToRequestPermission, permissionDeniedAffectedFeature, permissions);
     }
 
     public static void getPermissionScanQRCode(final Context context, final PermissionListener listener) {
@@ -225,8 +238,7 @@ public class PermisoWrapper {
                     Manifest.permission.BLUETOOTH_CONNECT,
                     Manifest.permission.BLUETOOTH_SCAN
             );
-        }
-        else{
+        } else {
             ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
             rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_scan_surrounding_ble);
             _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION);
@@ -297,6 +309,74 @@ public class PermisoWrapper {
                                 getPermissionGroupStrings(context, permissions) +
                                 context.getString(R.string.ncutils_permission_rationale_general_part2) +
                                 formatRationaleStrings(context, rationaleStringResourceArrayList),
+                        null,
+                        callback);
+            }
+        }, permissions);
+    }
+
+    private static void _getPermissionWithCustomRationale(final Context context, final PermissionListener listener, final String reasonToRequestPermission, final String permissionDeniedAffectedFeature, final String... permissions) {
+        Permiso.getInstance().requestPermissions(new Permiso.IOnPermissionResult() {
+            @Override
+            public void onPermissionResult(Permiso.ResultSet resultSet) {
+                boolean hasPermanentlyDeniedPermission = false;
+                if (resultSet.areAllPermissionsGranted()) {
+                    listener.onPermissionGranted();
+                } else {
+                    ArrayList<String> permissionsDeniedArrayList = new ArrayList<>();
+                    for (String strPermission : permissions) {
+                        if (resultSet.toMap().containsKey(strPermission)) {
+                            if (!resultSet.isPermissionGranted(strPermission)) {
+                                permissionsDeniedArrayList.add(strPermission);
+                            }
+                            if (resultSet.isPermissionPermanentlyDenied(strPermission)) {
+                                hasPermanentlyDeniedPermission = true;
+                            }
+                        }
+                    }
+                    String strDialogMessage = context.getString(R.string.ncutils_permission_denied_general) +
+                            getPermissionGroupStrings(context, permissionsDeniedArrayList) +
+                            "\n" + permissionDeniedAffectedFeature;
+
+                    AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                    builder.setTitle(R.string.app_name)
+                            .setCancelable(false);
+                    if (hasPermanentlyDeniedPermission) {
+                        strDialogMessage += "\n" + context.getString(R.string.ncutils_permission_denied_general_instructions);
+                        builder.setNegativeButton(R.string.ncutils_ok, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                listener.onPermissionDenied();
+                            }
+                        })
+                                .setPositiveButton(R.string.ncutils_permission_settings, new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        listener.onPermissionDenied();
+                                        PermisoWrapper.startInstalledAppDetailsActivity(context);
+                                    }
+                                });
+
+                    } else {
+                        builder.setNeutralButton(R.string.ncutils_ok, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                listener.onPermissionDenied();
+                            }
+                        });
+                    }
+                    builder.setMessage(strDialogMessage)
+                            .create()
+                            .show();
+                }
+            }
+
+            @Override
+            public void onRationaleRequested(Permiso.IOnRationaleProvided callback, String... permissions) {
+                Permiso.getInstance().showRationaleInDialog(context.getString(R.string.app_name),
+                        reasonToRequestPermission + "\n" +
+                        context.getString(R.string.ncutils_permission_rationale_general) +
+                                getPermissionGroupStrings(context, permissions),
                         null,
                         callback);
             }
@@ -481,7 +561,7 @@ public class PermisoWrapper {
             } else if (!ActivityCompat.shouldShowRequestPermissionRationale(activity, permission)) {
                 return PermissionStatus.NEVER_SHOW_AGAIN;
             } else {
-                permissionsStatus =  PermissionStatus.DENIED;
+                permissionsStatus = PermissionStatus.DENIED;
             }
         }
 

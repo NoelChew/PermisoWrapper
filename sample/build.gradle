@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 31
 
     defaultConfig {
         applicationId "com.noelchew.permisowrapper.demo"
         minSdkVersion 15
-        targetSdkVersion 29
-        versionCode 19
-        versionName "0.3.8"
+        targetSdkVersion 31
+        versionCode 20
+        versionName "0.3.9"
     }
     buildTypes {
         release {
