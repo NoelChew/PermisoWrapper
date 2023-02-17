@@ -25,6 +25,8 @@
     <string name="ncutils_permission_group_sensors">Sensors</string>
     <string name="ncutils_permission_group_sms">SMS</string>
     <string name="ncutils_permission_group_storage">Storage</string>
+    <string name="ncutils_permission_group_bluetooth">Bluetooth</string>
+    <string name="ncutils_permission_group_notifications">Notifications</string>
     <string name="ncutils_permission_rationale_general">Permission is required to access the following phone function(s):\n</string>
     <string name="ncutils_permission_rationale_general_part2">to use the following feature(s):\n</string>
     <string name="ncutils_permission_denied_general">App has no access to one or more of the following phone function(s):\n</string>
@@ -82,4 +84,7 @@
     <!-- BLE -->
     <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">Scan Surrounding Bluetooth Devices</string>
     <string name="ncutils_permission_rationale_feature_connect_ble">Connect Bluetooth Devices</string>
+
+    <!-- Notification -->
+    <string name="ncutils_permission_rationale_feature_receive_notifications">Receive Notifications</string>
 </resources>

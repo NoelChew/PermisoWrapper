@@ -22,7 +22,7 @@ import com.noelchew.permisowrapper.demo.listener.OnClickListener;
 public class DemoActivity extends AppCompatActivity {
 
     private Context context;
-    private Button btnCheckPermissions;
+    private Button btnCheckPermissions, btnCheckNotificationSettings;
     private RecyclerView recyclerView;
     private LinearLayoutManager linearLayoutManager;
 
@@ -39,6 +39,9 @@ public class DemoActivity extends AppCompatActivity {
 
         btnCheckPermissions = (Button) findViewById(R.id.button_check_permissions);
         btnCheckPermissions.setOnClickListener(btnCheckPermissionsOnClickListener);
+
+        btnCheckNotificationSettings = (Button) findViewById(R.id.button_check_notification_settings);
+        btnCheckNotificationSettings.setOnClickListener(btnCheckNotificationsSettingsOnClickListener);
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
@@ -86,6 +89,13 @@ public class DemoActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             PermisoWrapper.startInstalledAppDetailsActivity(context);
+        }
+    };
+
+    private View.OnClickListener btnCheckNotificationsSettingsOnClickListener  = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            PermisoWrapper.startInstalledAppNotificationSettingsActivity(context);
         }
     };
 

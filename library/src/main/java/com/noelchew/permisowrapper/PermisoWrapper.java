@@ -2,7 +2,7 @@ package com.noelchew.permisowrapper;
 
 import android.Manifest;
 import android.app.Activity;
-import android.bluetooth.BluetoothAdapter;
+import android.app.NotificationManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -246,6 +246,22 @@ public class PermisoWrapper {
         }
     }
 
+    // Bluetooth Low Energy
+    public static void getPermissionReceiveNotification(final Context context, final PermissionListener listener) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            ArrayList<Integer> rationaleStringResourceArrayList = new ArrayList<>();
+            rationaleStringResourceArrayList.add(R.string.ncutils_permission_rationale_feature_receive_notifications);
+            _getPermission(context, listener, rationaleStringResourceArrayList, Manifest.permission.POST_NOTIFICATIONS);
+        } else {
+            boolean hasPermission = Build.VERSION.SDK_INT < Build.VERSION_CODES.N || ((NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE)).areNotificationsEnabled();
+            if (hasPermission) {
+                listener.onPermissionGranted();
+            } else {
+                listener.onPermissionDenied();
+            }
+        }
+    }
+
     private static void _getPermission(final Context context, final PermissionListener listener, final ArrayList<Integer> rationaleStringResourceArrayList, final String... permissions) {
         Permiso.getInstance().requestPermissions(new Permiso.IOnPermissionResult() {
             @Override
@@ -254,7 +270,7 @@ public class PermisoWrapper {
                 if (resultSet.areAllPermissionsGranted()) {
                     listener.onPermissionGranted();
                 } else {
-                    ArrayList<String> permissionsDeniedArrayList = new ArrayList<>();
+                    final ArrayList<String> permissionsDeniedArrayList = new ArrayList<>();
                     for (String strPermission : permissions) {
                         if (resultSet.toMap().containsKey(strPermission)) {
                             if (!resultSet.isPermissionGranted(strPermission)) {
@@ -285,7 +301,11 @@ public class PermisoWrapper {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         listener.onPermissionDenied();
-                                        PermisoWrapper.startInstalledAppDetailsActivity(context);
+                                        if (permissionsDeniedArrayList.size() == 1 && permissionsDeniedArrayList.get(0).equalsIgnoreCase(Manifest.permission.POST_NOTIFICATIONS)) {
+                                            PermisoWrapper.startInstalledAppNotificationSettingsActivity(context);
+                                        } else {
+                                            PermisoWrapper.startInstalledAppDetailsActivity(context);
+                                        }
                                     }
                                 });
 
@@ -324,7 +344,7 @@ public class PermisoWrapper {
                 if (resultSet.areAllPermissionsGranted()) {
                     listener.onPermissionGranted();
                 } else {
-                    ArrayList<String> permissionsDeniedArrayList = new ArrayList<>();
+                    final ArrayList<String> permissionsDeniedArrayList = new ArrayList<>();
                     for (String strPermission : permissions) {
                         if (resultSet.toMap().containsKey(strPermission)) {
                             if (!resultSet.isPermissionGranted(strPermission)) {
@@ -354,7 +374,11 @@ public class PermisoWrapper {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         listener.onPermissionDenied();
-                                        PermisoWrapper.startInstalledAppDetailsActivity(context);
+                                        if (permissionsDeniedArrayList.size() == 1 && permissionsDeniedArrayList.get(0).equalsIgnoreCase(Manifest.permission.POST_NOTIFICATIONS)) {
+                                            PermisoWrapper.startInstalledAppNotificationSettingsActivity(context);
+                                        } else {
+                                            PermisoWrapper.startInstalledAppDetailsActivity(context);
+                                        }
                                     }
                                 });
 
@@ -449,8 +473,15 @@ public class PermisoWrapper {
                 permission.equalsIgnoreCase(Manifest.permission.WRITE_CONTACTS) ||
                 permission.equalsIgnoreCase(Manifest.permission.GET_ACCOUNTS)) {
             return R.string.ncutils_permission_group_contacts;
+        } else if (permission.equalsIgnoreCase(Manifest.permission.BLUETOOTH) ||
+                permission.equalsIgnoreCase(Manifest.permission.BLUETOOTH_CONNECT) ||
+                permission.equalsIgnoreCase(Manifest.permission.BLUETOOTH_SCAN) ||
+                permission.equalsIgnoreCase(Manifest.permission.BLUETOOTH_ADMIN) ||
+                permission.equalsIgnoreCase(Manifest.permission.BLUETOOTH_ADVERTISE)) {
+            return R.string.ncutils_permission_group_bluetooth;
         } else if (permission.equalsIgnoreCase(Manifest.permission.ACCESS_FINE_LOCATION) ||
-                permission.equalsIgnoreCase(Manifest.permission.ACCESS_COARSE_LOCATION)) {
+                permission.equalsIgnoreCase(Manifest.permission.ACCESS_COARSE_LOCATION) ||
+                permission.equalsIgnoreCase(Manifest.permission.ACCESS_BACKGROUND_LOCATION)) {
             return R.string.ncutils_permission_group_location;
         } else if (permission.equalsIgnoreCase(Manifest.permission.RECORD_AUDIO)) {
             return R.string.ncutils_permission_group_microphone;
@@ -474,6 +505,8 @@ public class PermisoWrapper {
         } else if (permission.equalsIgnoreCase(Manifest.permission.READ_EXTERNAL_STORAGE) ||
                 permission.equalsIgnoreCase(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
             return R.string.ncutils_permission_group_storage;
+        } else if (permission.equalsIgnoreCase(Manifest.permission.POST_NOTIFICATIONS)) {
+            return R.string.ncutils_permission_group_notifications;
         } else {
             return R.string.ncutils_permission_group_phone;
         }
@@ -585,5 +618,25 @@ public class PermisoWrapper {
         i.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
         i.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
         context.startActivity(i);
+    }
+
+    public static void startInstalledAppNotificationSettingsActivity(final Context context) {
+        if (context == null) {
+            return;
+        }
+        final Intent intent = new Intent();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            intent.setAction(Settings.ACTION_APP_NOTIFICATION_SETTINGS);
+            intent.putExtra(Settings.EXTRA_APP_PACKAGE, context.getPackageName());
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            intent.setAction("android.settings.APP_NOTIFICATION_SETTINGS");
+            intent.putExtra("app_package", context.getPackageName());
+            intent.putExtra("app_uid", context.getApplicationInfo().uid);
+        } else {
+            intent.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+            intent.addCategory(Intent.CATEGORY_DEFAULT);
+            intent.setData(Uri.parse("package:" + context.getPackageName()));
+        }
+        context.startActivity(intent);
     }
 }

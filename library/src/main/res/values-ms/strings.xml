@@ -83,4 +83,7 @@
     <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">Imbas Alat Bluetooth Sekeliling</string>
     <string name="ncutils_permission_rationale_feature_connect_ble">Sambungkan Peranti Bluetooth</string>
 
+    <!-- Notification -->
+    <string name="ncutils_permission_rationale_feature_receive_notifications">Terima Pemberitahuan</string>
+
 </resources>

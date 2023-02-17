@@ -82,4 +82,7 @@
     <!-- BLE -->
     <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">Сканирование окружающих Bluetooth устройств</string>
     <string name="ncutils_permission_rationale_feature_connect_ble">Подключить Bluetooth-устройства</string>
+
+    <!-- Notification -->
+    <string name="ncutils_permission_rationale_feature_receive_notifications">Получать уведомления</string>
 </resources>

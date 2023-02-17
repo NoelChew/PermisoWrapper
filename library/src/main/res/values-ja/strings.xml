@@ -83,4 +83,7 @@
     <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">周囲のBluetoothデバイスをスキャンする</string>
     <string name="ncutils_permission_rationale_feature_connect_ble">Bluetoothデバイスを接続する</string>
 
+    <!-- Notification -->
+    <string name="ncutils_permission_rationale_feature_receive_notifications">通知を受け取る</string>
+
 </resources>

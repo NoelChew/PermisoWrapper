@@ -82,4 +82,7 @@
     <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">扫描周边蓝牙设备</string>
     <string name="ncutils_permission_rationale_feature_connect_ble">连接蓝牙设备</string>
 
+    <!-- Notification -->
+    <string name="ncutils_permission_rationale_feature_receive_notifications">接收通知</string>
+
 </resources>

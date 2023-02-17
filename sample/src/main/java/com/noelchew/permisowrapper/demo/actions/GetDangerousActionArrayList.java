@@ -35,6 +35,7 @@ public class GetDangerousActionArrayList {
         dangerousActionArrayList.add(new DangerousAction("Read SMS"));
         dangerousActionArrayList.add(new DangerousAction("Access Phone Sensors"));
         dangerousActionArrayList.add(new DangerousAction("Enable BLE"));
+        dangerousActionArrayList.add(new DangerousAction("Receive Notifications"));
 
         return dangerousActionArrayList;
     }

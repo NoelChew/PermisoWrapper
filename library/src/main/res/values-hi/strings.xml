@@ -82,4 +82,7 @@
     <!-- BLE -->
     <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">आसपास के ब्लूटूथ डिवाइस को स्कैन करें</string>
     <string name="ncutils_permission_rationale_feature_connect_ble">ब्लूटूथ डिवाइस कनेक्ट करें</string>
+
+    <!-- Notification -->
+    <string name="ncutils_permission_rationale_feature_receive_notifications">सूचनाएं प्राप्त करें</string>
 </resources>
