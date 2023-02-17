@@ -82,5 +82,8 @@
     <!-- BLE -->
     <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">주변 블루투스 장치 스캔</string>
     <string name="ncutils_permission_rationale_feature_connect_ble">블루투스 장치 연결</string>
+
+    <!-- Notification -->
+    <string name="ncutils_permission_rationale_feature_receive_notifications">알림 받기</string>
     
 </resources>

@@ -57,5 +57,6 @@
     <string name="ncutils_permission_rationale_feature_access_sensors">Toegang telefoonsensoren</string>
     <string name="ncutils_permission_rationale_feature_scan_surrounding_ble">Omringende Bluetooth-apparaten scannen</string>
     <string name="ncutils_permission_rationale_feature_connect_ble">Bluetooth-apparaten verbinden</string>
+    <string name="ncutils_permission_rationale_feature_receive_notifications">Meldingen ontvangen</string>
 
 </resources>
