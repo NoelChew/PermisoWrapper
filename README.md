@@ -67,9 +67,13 @@ PermisoWrapper.getPermissionTakeVideo(context, new PermisoWrapper.PermissionList
 ## List of Predefined Methods
 - getPermissionScanQRCode()
 - getPermissionPickPictureVideo()
+- getPermissionPickAudio()
+- getPermissionPickFolderFile()
 - getPermissionTakePicture()
-- getPermissionTakePictureWithoutSave()
+- getPermissionTakePictureWithoutExternalStorage()
 - getPermissionTakeVideo()
+- getPermissionRecordVoice()
+- getPermissionRecordVoiceWithoutExternalStorage()
 - getPermissionVoiceMessage()
 - getPermissionVoiceCall()
 - getPermissionVideoCall()
@@ -84,10 +88,13 @@ PermisoWrapper.getPermissionTakeVideo(context, new PermisoWrapper.PermissionList
 - getPermissionAccessPhoneFeatures()
 - getPermissionGetPhoneNumber()
 - getPermissionMakePhoneCall()
+- getPermissionAnswerPhoneCall()
 - getPermissionAccessSMS()
 - getPermissionSendSMS()
 - getPermissionReadSMS()
 - getPermissionAccessPhoneSensors()
+- getPermissionScanSurroundingAndConnectBLE()
+- getPermissionReceiveNotification()
 
 
 ## Integration
